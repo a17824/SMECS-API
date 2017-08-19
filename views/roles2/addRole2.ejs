@@ -1,0 +1,94 @@
+<html>
+<head>
+    <title>add role</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">  </script>
+    <script>
+        $(document).ready(function(){
+            var roleID,roleName;
+            var select = '';
+            var myArray = $("#inUseRoleID").val().split(",").map(Number);
+            for (i=1;i<=99;i++){
+                if(myArray.indexOf(i) == -1){
+                select += '<option val=' + i + '>' + i + '</option>';
+                }
+            }
+            $('#some_select').html(select);
+
+            $("#btSubmit").click(function(){
+                roleID=$("#some_select").val();
+                roleName=$("#roleName").val();
+
+                //-----forms validation------------------------------------
+                if (roleName == "" ) {
+                    alert("ROLE NAME must be filled out");
+                    return false;
+                }
+                var numbers = /[0-99]|\./;
+                if (!numbers.test(roleID)) {
+                    alert("ROLE ID must be between 1 and 99 ");
+                    return false;
+                }
+                /*error: function(error){
+                    if(error.responseText == 'showAlert')
+                        alert("Please enter correct user name and password.");
+                    }
+                }*/
+                //--------------------------------forms validation end-------
+
+                $.post("/roles2/addRole2",{
+                    roleID: roleID,
+                    roleName: roleName
+                },function(data){
+                    if(data==='done')
+                    {
+                        alert("login success");
+                    }
+                    window.location = data.redirect
+                }).error(function(error){
+                    if(error.responseText == 'showAlert')
+                        alert("Role Name already already in use. Choose a different Name")
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+<h1><%= title %></h1>
+
+<form action="/dashboard">
+    <input type="submit" value="Home"><br>
+</form>
+<form>
+
+
+
+    <label for="roleName"><b>Role Name:</b></label><br>
+    <input type="text" id="roleName" size="40" placeholder="ex: Teacher"><br><br>
+
+    <input type="hidden" id="inUseRoleID" value="<%= array %>">
+
+    <% if (userAuthID == 1) {%>
+    <label for="roleID"><b>Role ID:</b></label><br>
+    <select id='some_select'></select><br><br>
+    <% } else { %>
+    <select id='some_select' style="display:none;"></select>
+    <% } %>
+
+    <% if (aclAddRoles2 == null || aclAddRoles2.checkBoxValue == true) {%>
+    <input type="button" id="btSubmit" value="Submit" ><br>
+    <% } else { %>
+    <input type="button" id="btSubmit" value="Submit" disabled><br>
+    <% } %>
+
+
+</form>
+<form action="/roles2/showRoles2">
+    <% if (aclAddRoles2 == null || aclAddRoles2.checkBoxValue == true) {%>
+    <input type="submit" value="Back" ><br>
+    <% } else { %>
+    <input type="submit" value="Back" disabled><br>
+    <% } %>
+
+</form>
+</body>
+</html>

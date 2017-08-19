@@ -1,0 +1,162 @@
+<html>
+<head>
+    <title>Choose Alert</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">  </script>
+    <link rel='stylesheet' href='/stylesheets/chooseAlert.css' />
+    <script>
+        $(document).ready(function(){
+
+            $('input[name=onoffswitch]').change(function(){
+                if($('#myonoffswitch').is(':checked')) {
+                    $('#testModeOFF').css('display', "none");
+                    $('#testModeON').css('display', "unset");
+                }
+                else{
+                    $('#testModeON').css('display', "none");
+                    $('#testModeOFF').css('display', "unset");
+                }
+            });
+
+            var alertID,alertSlugName,alertName;
+            var testModeON = false;
+            $("#btSubmit").click(function(){
+                alertSlugName=$("input:radio[name='alert']:checked").val();
+                alertID=$('input[name=alert]:checked').attr('id');
+                alertName = $("input:radio[name='alert']:checked + label").text();
+
+                if ($('input[name=onoffswitch]:checked').length > 0) {
+                    testModeON = true;
+                }
+
+                //-----forms validation------------------------------------
+
+                if (alertSlugName == null ) {
+                    alert("You must choose one Alert");
+                    return false;
+                }
+                //--------------------------------forms validation end-------
+
+                $.post("/alerts/sending/chooseAlert",{
+                    alertSlugName: alertSlugName,
+                    alertID: alertID,
+                    alertName: alertName,
+                    testModeON: testModeON
+
+                },function(data){
+                    if(data==='done')
+                    {
+                        alert("login success");
+                    }
+                    window.location = data.redirect
+                }).error(function(error){
+                    if(error.responseText == 'showAlert')
+                        alert("Alert not sent.")
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+<h1><%= title %></h1>
+
+<% if ( error_messages ) { %>
+<p style="color: red"><%= error_messages %></p>
+<% } %>
+
+<!-- if user authenticated has permission to send Test alert -> draw checkbox Test Mode//-->
+<% alerts.some(function(alert) { %>
+<% var stop = 0 %>
+<% if (alert.softDeleted == false) {%>
+<% aclTest.some(function(aclTest) { %>
+    <% if (aclTest.checkBoxID == 's' + userAuthRoleID + alert.alertID && aclTest.checkBoxValue == true ) {%>
+        <div class="onoffswitch">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+            <label class="onoffswitch-label" for="myonoffswitch">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+    <% stop = 1; %>
+    <% return true; %>
+<% } else return false; %>
+<% }); %>
+<% if ( stop == 1 ) { %>
+<% return true; %>
+<% } else return false; %>
+<% } %>
+<% }); %>
+<br>
+<form>
+
+    <div id='testModeOFF' name="testModeOFF">
+    <% alerts.forEach(function(alert) { %>
+        <% if (alert.alertID == 1) {%>
+            <input type="button" style="width: 12em; height: 8em; background-color: red" id="panic" value="Panic" ><br>
+        <% } else { %>
+
+
+        <!-- check if school owns license for this alert or if alert is active (not soft deleted) //-->
+            <% if (alert.softDeleted == false) {%>
+                <!-- if user authenticated has permission to send alert -> draw checkbox //-->
+                <% aclReal.forEach(function(aclReal) { %>
+                    <% if (aclReal.checkBoxID == 's' + userAuthRoleID + alert.alertID && aclReal.checkBoxValue == true) {%>
+                        <input type="radio" name="alert" id=<%= alert.alertID %> value="<%= alert.alertSlugName %>" >
+                        <% if (alert.alertTypeID == 2) {%>
+                            <label for="alert" style="color: red"><%= alert.alertName %></label><br>
+                        <% } if (alert.alertTypeID == 3){ %>
+                            <label for="alert" style="color: green"><%= alert.alertName %></label><br>
+                        <% } if (alert.alertTypeID == 4){ %>
+                            <label for="alert" style="color: blue"><%= alert.alertName %></label><br>
+                        <% } if (alert.alertTypeID == 5){ %>
+                            <label for="alert" style="color: #e3c300"><%= alert.alertName %></label><br>
+                        <% } if (alert.alertTypeID > 5){ %>
+                            <label for="alert"><%= alert.alertName %></label><br>
+                        <% } %>
+                    <% }  %>
+                <% }); %>
+            <% } %>
+
+        <% } %>
+    <% }); %>
+    </div>
+
+    <div id='testModeON' name="testModeON" style='display:none'>
+        <% alerts.forEach(function(alert) { %>
+        <% if (alert.alertID == 1) {%>
+        <input type="button" style="width: 12em; height: 8em; background-color: red" id="panic" value="Panic" ><br>
+        <% } else { %>
+        <!-- check if school owns license for this alert or if alert is active (not soft deleted) //-->
+        <% if (alert.softDeleted == false) {%>
+        <!-- if user authenticated has permission to send alert -> draw checkbox //-->
+        <% aclTest.forEach(function(aclTest) { %>
+        <% if (aclTest.checkBoxID == 's' + userAuthRoleID + alert.alertID && aclTest.checkBoxValue == true) {%>
+        <input type="radio" name="alert" id=<%= alert.alertID %> value="<%= alert.alertSlugName %>" >
+        <% if (alert.alertTypeID == 2) {%>
+        <label for="alert" style="color: red"><%= alert.alertName %></label><br>
+        <% } if (alert.alertTypeID == 3){ %>
+        <label for="alert" style="color: green"><%= alert.alertName %></label><br>
+        <% } if (alert.alertTypeID == 4){ %>
+        <label for="alert" style="color: blue"><%= alert.alertName %></label><br>
+        <% } if (alert.alertTypeID == 5){ %>
+        <label for="alert" style="color: #e3c300"><%= alert.alertName %></label><br>
+        <% } if (alert.alertTypeID > 5){ %>
+        <label for="alert"><%= alert.alertName %></label><br>
+        <% } %>
+        <% }  %>
+        <% }); %>
+        <% } %>
+        <% } %>
+        <% }); %>
+    </div>
+
+
+    <br>
+    <input type="button" style="width: 10em; height: 1.8em" id="btSubmit" value="Next" ><br>
+</form>
+<% // if (userAuthPrivilegeID !== 4) {%>
+<form action="/dashboard">
+    <input type="submit" value="Back">
+</form>
+<% // } %>
+</body>
+</html>
