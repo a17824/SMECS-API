@@ -40,7 +40,7 @@ router.post('/api', function (req, res) {
         } else {
             if (bcrypt.compareSync(req.body.pin, user.pin)) {
                 req.session.user = user;
-                res.status(400);
+                res.status(200);
                 res.end();
             } else {
                 res.render('api', { error: "ERROR: Incorrect email or pin.", csrfToken: req.csrfToken() });
