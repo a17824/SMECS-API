@@ -1,17 +1,16 @@
 //Dependencies
 var express = require('express');
 var bcrypt = require('bcryptjs');
-var csrf = require('csurf');
 var models = require('./../models');
 var router = express.Router();
 
-router.use(csrf());
-
+var jwt = require('jsonwebtoken'); // used to create, sign, and verify tokens
 /**
  * Render the login page.
  */
 router.get('/api', function (req, res) {
-    res.render('api', { title: 'SMECS Login', error: "", csrfToken: req.csrfToken() }); // add this at api.ejs: <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+    //res.render('api', { title: 'SMECS Login', error: "", csrfToken: req.csrfToken() }); // add this at api.ejs: <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+    res.json({ message: 'Hello!', csrfToken: req.csrfToken() });
 });
 
 /**
@@ -26,24 +25,33 @@ router.post('/api', function (req, res) {
             //checks for users in UtilityUsers database
             models.UtilityUsers.findOne({ email: req.body.email }, function (err, utilityUser) {
                 if (!utilityUser || utilityUser.softDeleted !== null) {
-                    res.render('api', { error: "ERROR: Incorrect email or pin.", csrfToken: req.csrfToken() });
+                    res.json({ success: false, error: "ERROR: Incorrect email or pin.", csrfToken: req.csrfToken() });
                 } else {
                     if (bcrypt.compareSync(req.body.pin, utilityUser.pin)) {
                         req.session.user = utilityUser;
                         res.redirect('/reports/requestAssistance');
                     } else {
-                        res.render('api', { error: "ERROR: Incorrect email or pin.", csrfToken: req.csrfToken() });
+                        res.json({ error: "ERROR: Incorrect email or pin.", csrfToken: req.csrfToken() });
                     }
                 }
             });
             //END OF checks for users in UtilityUsers database
         } else {
             if (bcrypt.compareSync(req.body.pin, user.pin)) {
-                req.session.user = user;
-                res.status(200);
-                res.end();
+                // if user is found and password is right
+                // create a token
+                var token = jwt.sign({user}, 'ilovescotchyscotch', {
+                    //expiresIn: 1440 // expires in 24 hours
+                });
+
+                // return the information including token as JSON
+                res.json({
+                    success: true,
+                    message: 'Enjoy your token!',
+                    token: token
+                });
             } else {
-                res.render('api', { error: "ERROR: Incorrect email or pin.", csrfToken: req.csrfToken() });
+                res.json({ error: "ERROR: Incorrect email or pin.", csrfToken: req.csrfToken() });
             }
         }
     });
