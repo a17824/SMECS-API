@@ -43,6 +43,8 @@ router.get('/', function(req, res, next) {
     res.render('index', { title: 'SMECS'  });
 });
 
+
+
 /* Test CKEditor. */
 router.get('/ckeditor/samples/index', function(req, res, next) {
     res.render('ckeditor/samples/index');
