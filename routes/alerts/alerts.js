@@ -132,7 +132,6 @@ module.exports.createPost = function(req, res) {
     });
     alert1.save(function (err) {
         if (err && (err.code === 11000 || err.code === 11001)) {
-            console.log("rrrrrrrrrrrrrrrrrrrrrrrrrr");
             return res.status(409).send('showAlert')
         }else{
             var typeAclAlert = 'AclAlertsReal';
@@ -327,19 +326,57 @@ module.exports.softDelete = function(req, res) {
         alert.softDeleted = true;
         alert.save();
         res.redirect('/alerts/showAlerts');
-    })
+
+        //UPDATE ACL ALERTS--------
+        var aclAlertsToUpdate =  alert.alertID;
+        var typeAclAlert = 'AclAlertsReal';
+        updateAclAlerts(aclAlertsToUpdate);
+
+        typeAclAlert = 'AclAlertsTest';
+        updateAclAlerts(aclAlertsToUpdate);
+
+        function updateAclAlerts(aclAlertsToUpdate){
+            models[typeAclAlert].find({'alertID': aclAlertsToUpdate }, function(err, groups) {
+                groups.forEach( function(group) {
+                    group.alertSoftDeleted = true;
+                    group.save();
+                });
+            });
+        }
+        //--------end UPDATE ACL ALERT
+    });
+
+
+
 };
 /* ------------ end of SoftDeleted Alerts. */
 
 /* Restore SoftDeleted Alerts. */
 module.exports.restoreAlert = function(req, res) {
-    console.log(req.params.id);
     var alertToRestore = req.params.id;
 
     models.Alerts.findById({'_id': alertToRestore}, function(err, alert){
         alert.softDeleted = false;
         alert.save();
         res.redirect('/alerts/addAlerts');
+
+        //UPDATE ACL ALERTS--------
+        var aclAlertsToUpdate =  alert.alertID;
+        var typeAclAlert = 'AclAlertsReal';
+        updateAclAlerts(aclAlertsToUpdate);
+
+        typeAclAlert = 'AclAlertsTest';
+        updateAclAlerts(aclAlertsToUpdate);
+
+        function updateAclAlerts(aclAlertsToUpdate){
+            models[typeAclAlert].find({'alertID': aclAlertsToUpdate }, function(err, groups) {
+                groups.forEach( function(group) {
+                    group.alertSoftDeleted = false;
+                    group.save();
+                });
+            });
+        }
+        //--------end UPDATE ACL ALERT
     })
 };/* ------------ end of SoftDeleted Alerts. */
 

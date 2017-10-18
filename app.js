@@ -15,7 +15,7 @@ var flash = require('express-flash');
 //.js file
 var routes = require('./routes/index');
 var login = require('./routes/authentication/login');
-var api = require('./routes/authentication/api');
+
 
 
 
@@ -55,7 +55,7 @@ app.use(function(req, res, next){
 
 app.use('/', routes);
 app.use('/', login);
-app.use('/', api);
+
 
 
 

@@ -4,7 +4,7 @@
     <option name="serverConfigurations">
       <list>
         <ServerConfiguration>
-          <option name="label" value="SMECS_server" />
+          <option name="label" value="connection_to_mongo_at_localhost" />
           <option name="serverUrls">
             <list>
               <option value="localhost:27017" />

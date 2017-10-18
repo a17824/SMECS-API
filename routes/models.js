@@ -272,6 +272,7 @@ var AclAlertsRealSchema = new mongoose.Schema({
     roleGroupName: String, // Principal, Office Staff, Teacher
     alertID: Number,
     alertName: String, // Permission to Send/Receive alerts
+    alertSoftDeleted: { type: Boolean, default: false},
     checkBoxType: String,
     checkBoxID: { type: String, unique: true },
     checkBoxName: { type: String, unique: true },
@@ -287,6 +288,7 @@ var AclAlertsTestSchema = new mongoose.Schema({
     roleGroupName: String, // Principal, Office Staff, Teacher
     alertID: Number,
     alertName: String, // Permission to Send/Receive alerts
+    alertSoftDeleted: { type: Boolean, default: false},
     checkBoxType: String,
     checkBoxID: { type: String, unique: true },
     checkBoxName: { type: String, unique: true },

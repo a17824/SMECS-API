@@ -84,7 +84,7 @@ router.post('/login', function(req, res) {
             //res.render('login', { error: "ERROR: Incorrect email or pin."});
         } else {
             //console.log(user);
-            if (bcrypt.compareSync(req.body.pin, user.pin)) {
+            if (bcrypt.compareSync(req.body.pin, user.pin)) { // if user is found and password is right
                 req.session.user = user;
                 /*
                 if (user.userPrivilegeID == 4){ // If user Privilege is "Regular User" then redirects to "choosing alert" page
