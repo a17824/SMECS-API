@@ -149,6 +149,7 @@ module.exports.createPost = function(req, res) {
                     var aclAlertSend = new models[typeAclAlert]({
                         roleGroupID: groups[u].roleID,
                         roleGroupName: groups[u].roleName,
+                        alertTypeID: req.body.alertGroupID,
                         alertID: req.body.alertID,
                         alertName: req.body.alertName,
                         checkBoxType: 'send',
@@ -159,6 +160,7 @@ module.exports.createPost = function(req, res) {
                     var aclAlertReceive = new models[typeAclAlert]({
                         roleGroupID: groups[u].roleID,
                         roleGroupName: groups[u].roleName,
+                        alertTypeID: req.body.alertGroupID,
                         alertID: req.body.alertID,
                         alertName: req.body.alertName,
                         checkBoxType: 'receive',
@@ -241,7 +243,7 @@ module.exports.updatePost = function(req, res) {
                 return res.status(409).send('showAlert')
             }else {
 
-                var aclAlertToUpdate1 = req.body.oldRoleID;
+                var aclAlertToUpdate1 = req.body.alertID;
 
                 var typeAclAlert = 'AclAlertsReal';
                 updateAclAlerts(aclAlertToUpdate1, typeAclAlert);
@@ -256,8 +258,8 @@ module.exports.updatePost = function(req, res) {
                 models[typeAclAlert].find({}, function(err, groups) {
                     if( err || !groups) console.log("No Alerts groups found");
                     else groups.forEach( function(group) {
-                        //console.log(group.roleName);
                         if (group.checkBoxID == 's'+group.roleGroupID+aclAlertToUpdate1){
+                            group.alertTypeID = req.body.alertGroupID;
                             group.alertID = req.body.alertID;
                             group.alertName = req.body.alertName;
                             group.checkBoxType = 'send';
@@ -266,6 +268,7 @@ module.exports.updatePost = function(req, res) {
                             group.save();
                         }
                         if (group.checkBoxID == 'r'+group.roleGroupID+aclAlertToUpdate1){
+                            group.alertTypeID = req.body.alertGroupID;
                             group.alertID = req.body.alertID;
                             group.alertName = req.body.alertName;
                             group.checkBoxType = 'receive';

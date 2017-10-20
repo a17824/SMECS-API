@@ -270,6 +270,7 @@ module.exports.AclPermissions = mongoose.model("AclPermissions", AclPermissionsS
 var AclAlertsRealSchema = new mongoose.Schema({
     roleGroupID: Number,
     roleGroupName: String, // Principal, Office Staff, Teacher
+    alertTypeID: Number, // Red, Green, Blue...
     alertID: Number,
     alertName: String, // Permission to Send/Receive alerts
     alertSoftDeleted: { type: Boolean, default: false},
@@ -286,6 +287,7 @@ module.exports.AclAlertsReal = mongoose.model("AclAlertsReal", AclAlertsRealSche
 var AclAlertsTestSchema = new mongoose.Schema({
     roleGroupID: Number,
     roleGroupName: String, // Principal, Office Staff, Teacher
+    alertTypeID: Number, // Red, Green, Blue...
     alertID: Number,
     alertName: String, // Permission to Send/Receive alerts
     alertSoftDeleted: { type: Boolean, default: false},
