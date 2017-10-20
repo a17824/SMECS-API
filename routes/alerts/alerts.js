@@ -150,6 +150,7 @@ module.exports.createPost = function(req, res) {
                         roleGroupID: groups[u].roleID,
                         roleGroupName: groups[u].roleName,
                         alertTypeID: req.body.alertGroupID,
+                        alertTypeName: req.body.alertGroupName,
                         alertID: req.body.alertID,
                         alertName: req.body.alertName,
                         checkBoxType: 'send',
@@ -161,6 +162,7 @@ module.exports.createPost = function(req, res) {
                         roleGroupID: groups[u].roleID,
                         roleGroupName: groups[u].roleName,
                         alertTypeID: req.body.alertGroupID,
+                        alertTypeName: req.body.alertGroupName,
                         alertID: req.body.alertID,
                         alertName: req.body.alertName,
                         checkBoxType: 'receive',
@@ -243,23 +245,22 @@ module.exports.updatePost = function(req, res) {
                 return res.status(409).send('showAlert')
             }else {
 
-                var aclAlertToUpdate1 = req.body.alertID;
-
                 var typeAclAlert = 'AclAlertsReal';
-                updateAclAlerts(aclAlertToUpdate1, typeAclAlert);
+                updateAclAlerts(typeAclAlert);
 
                 typeAclAlert = 'AclAlertsTest';
-                updateAclAlerts(aclAlertToUpdate1, typeAclAlert);
+                updateAclAlerts(typeAclAlert);
 
                 res.send({redirect: '/alerts/showAlerts'});
             }
             //UPDATE ACL ALERTS--------
-            function updateAclAlerts(aclAlertToUpdate1, typeAclAlert){
+            function updateAclAlerts(typeAclAlert){
                 models[typeAclAlert].find({}, function(err, groups) {
                     if( err || !groups) console.log("No Alerts groups found");
                     else groups.forEach( function(group) {
-                        if (group.checkBoxID == 's'+group.roleGroupID+aclAlertToUpdate1){
+                        if (group.checkBoxID == 's'+group.roleGroupID+req.body.oldAlertID){
                             group.alertTypeID = req.body.alertGroupID;
+                            group.alertTypeName = req.body.alertGroupName;
                             group.alertID = req.body.alertID;
                             group.alertName = req.body.alertName;
                             group.checkBoxType = 'send';
@@ -267,8 +268,9 @@ module.exports.updatePost = function(req, res) {
                             group.checkBoxName = 's'+group.roleGroupName+req.body.alertName;
                             group.save();
                         }
-                        if (group.checkBoxID == 'r'+group.roleGroupID+aclAlertToUpdate1){
+                        if (group.checkBoxID == 'r'+group.roleGroupID+req.body.oldAlertID){
                             group.alertTypeID = req.body.alertGroupID;
+                            group.alertTypeName = req.body.alertGroupName;
                             group.alertID = req.body.alertID;
                             group.alertName = req.body.alertName;
                             group.checkBoxType = 'receive';

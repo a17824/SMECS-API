@@ -159,8 +159,41 @@ module.exports.updatePost = function(req, res) {
                         if (group.alertTypeID == alertToUpdate1){
                             group.alertTypeID = req.body.alertGroupID;
                             group.alertTypeName = req.body.alertGroupName;
-                            group.save();
-                            console.log("saved");
+                            group.save(function (err) {
+                                if (err && (err.code === 11000 || err.code === 11001)) {
+                                    console.log(err);
+                                    return res.status(409).send('showAlert')
+                                }else {
+                                    var aclAlertToUpdate1 = group.alertID;
+                                    console.log(aclAlertToUpdate1);
+                                    var typeAclAlert = 'AclAlertsReal';
+                                    updateAclAlerts(aclAlertToUpdate1, typeAclAlert);
+
+                                    typeAclAlert = 'AclAlertsTest';
+                                    updateAclAlerts(aclAlertToUpdate1, typeAclAlert);
+
+                                }
+                                //UPDATE ACL ALERTS--------
+                                function updateAclAlerts(aclAlertToUpdate1, typeAclAlert){
+                                    models[typeAclAlert].find({}, function(err, aclGroups) {
+                                        if( err || !aclGroups) console.log("No Alerts groups found");
+                                        else aclGroups.forEach( function(aclGroup) {
+                                            if (aclGroup.checkBoxID == 's'+aclGroup.roleGroupID+aclGroup.alertID){
+                                                console.log('2222222222');
+                                                aclGroup.alertTypeID = req.body.alertGroupID;
+                                                aclGroup.alertTypeName = req.body.alertGroupName;
+                                                aclGroup.save();
+                                            }
+                                            if (aclGroup.checkBoxID == 'r'+aclGroup.roleGroupID+aclGroup.alertID){
+                                                aclGroup.alertTypeID = req.body.alertGroupID;
+                                                aclGroup.alertTypeName = req.body.alertGroupName;
+                                                aclGroup.save();
+                                            }
+                                        });
+                                    });
+                                }
+                                //--------end UPDATE ACL ALERT (default: all checkboxes are enable)
+                            });
                         }
                     });
                 });
