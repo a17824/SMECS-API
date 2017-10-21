@@ -153,7 +153,6 @@ module.exports.updatePost = function(req, res) {
             }else{
                 //UPDATE Alerts Group_name & Group_id DATABASE--------
                 var alertToUpdate1 = req.body.oldAlertGroupID;
-                var oldGroupID = req.body.oldAlertGroupName;
                 models.Alerts.find({}, function(err, groups) {
                     if( err || !groups) console.log("No Permission groups found");
                     else groups.forEach( function(group) {
@@ -165,8 +164,6 @@ module.exports.updatePost = function(req, res) {
                                     console.log(err);
                                     return res.status(409).send('showAlert')
                                 }else {
-                                    //var aclAlertToUpdate1 = group.alertID;
-
                                     var typeAclAlert = 'AclAlertsReal';
                                     updateAclAlerts(typeAclAlert);
 
@@ -179,30 +176,15 @@ module.exports.updatePost = function(req, res) {
                                     models[typeAclAlert].find({}, function(err, aclGroups) {
                                         if( err || !aclGroups) console.log("No Alerts groups found");
                                         else aclGroups.forEach( function(aclGroup) {
-
-                                            console.log('000000');
-                                            console.log(aclGroup);
-                                            console.log('11111111');
-                                            console.log('req.body.oldAlertGroupID = cor RED id 2 = ' + req.body.oldAlertGroupID);
-                                            console.log('base de dados = cor RED id 2 = ' +aclGroup.alertTypeID);
-                                            console.log('new = group id 7 = ' + group.alertTypeID);
-                                            console.log('new = cor RED2 = ' + req.body.alertGroupName);
-
-
                                             if (aclGroup.checkBoxID == 's'+aclGroup.roleGroupID+aclGroup.alertID && req.body.oldAlertGroupID == aclGroup.alertTypeID ){
-                                                console.log('2222222222');
-
                                                 aclGroup.alertTypeID = group.alertTypeID;
                                                 aclGroup.alertTypeName = req.body.alertGroupName;
                                                 aclGroup.save();
-
                                             }
                                             if (aclGroup.checkBoxID == 'r'+aclGroup.roleGroupID+aclGroup.alertID && req.body.oldAlertGroupID == aclGroup.alertTypeID){
-
                                                 aclGroup.alertTypeID = group.alertTypeID;
                                                 aclGroup.alertTypeName = req.body.alertGroupName;
                                                 aclGroup.save();
-
                                             }
                                         });
                                     });
