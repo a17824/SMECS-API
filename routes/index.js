@@ -135,6 +135,7 @@ router.post('/students/addStudent', auth.simpleAuth, auth.requireLogin, students
 router.get('/students/addMultiStudents', auth.simpleAuth, auth.requireLogin, students.addMultiple, function (req, res){
 });
 router.post('/students/addMultiStudents', auth.simpleAuth, auth.requireLogin, students.addMultiplePost, function (req, res){
+
 });
 
 

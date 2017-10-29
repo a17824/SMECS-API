@@ -81,6 +81,7 @@ module.exports.addMultiple = function (req, res){
     res.render('students/addMultiStudents', { title: 'ADD MULTIPLE STUDENTS'});
 };
 module.exports.addMultiplePost = function (req, res){
+    console.log('entrou');
     var form = new formidable.IncomingForm();
     form.parse(req, function(err, fields, files) {
         console.log(util.inspect({fields: fields, files: files}));

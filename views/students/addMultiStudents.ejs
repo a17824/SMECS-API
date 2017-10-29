@@ -2,10 +2,11 @@
 <head>
     <title>add multi students</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
-    <script src="jquery-1.12.0.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">  </script>
     <script>
         var _validFileExtensions = [".CSV", ".TXT"];
         function ValidateSingleInput(oInput) {
+
             if (oInput.type == "file") {
                 var sFileName = oInput.value;
                 if (sFileName.length > 0) {
@@ -32,7 +33,7 @@
 <body>
 <h1><%= title %></h1>
 
-<form action="/students/addMultiStudents" enctype="multipart/form-data" method="post ">
+<form action="/students/addMultiStudents" enctype="multipart/form-data" method="post">
 
 
 

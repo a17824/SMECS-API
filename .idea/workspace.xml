@@ -2,6 +2,331 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c696042-d8e9-4acc-bd07-eb13244ccc1f" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\01000.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\01000.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\01000.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\01001.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\01002.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\01003.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\01004.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\01005.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\01006.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\01007.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\01008.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\01009.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\01010.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\01011.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\01012.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\01013.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\01014.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\01015.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\01016.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\01017.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\01018.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\01019.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\01020.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\01021.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\01022.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\01023.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\01024.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\01025.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111001.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111004.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111005.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111006.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111036.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111053.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111054.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111055.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111057.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111058.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111059.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111061.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111062.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111063.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111064.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111066.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111073.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111075.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111080.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111084.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111085.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111122.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111129.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111130.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111133.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111149.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111150.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111151.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111152.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111154.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111155.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111156.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111158.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111160.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111164.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111165.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111169.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111171.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111175.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111176.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111200.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111201.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111202.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111205.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111209.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111212.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111214.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111222.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111227.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111229.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111231.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111232.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111236.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111237.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111238.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111239.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111240.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111241.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111247.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111248.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111250.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111251.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111254.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111260.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111263.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111264.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111265.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111266.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111269.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111270.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111271.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111272.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111277.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111283.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111287.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111293.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111296.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111308.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111310.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111317.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111318.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111321.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111322.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111330.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111332.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111333.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111337.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111339.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111340.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111343.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111345.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111346.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111350.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111355.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111359.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111360.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111362.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111363.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111368.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111369.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111372.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111373.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111374.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111401.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111402.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111403.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111404.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111405.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111407.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111408.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111411.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111412.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111413.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111417.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111418.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111429.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111430.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111431.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111432.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111433.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111434.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111441.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111443.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111444.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111455.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111457.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111462.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111467.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111469.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111475.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111476.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111478.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111480.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111481.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111482.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111483.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111485.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111486.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111489.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111490.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111498.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111500.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111501.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111502.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111503.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111504.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111505.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111509.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111516.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111524.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111527.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111528.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111530.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111534.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111540.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111541.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111542.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111543.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111544.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111545.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111551.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111555.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111557.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111558.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111560.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111561.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111563.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111564.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111565.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111574.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111575.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111577.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111578.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111581.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111583.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111584.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111585.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111586.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111588.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111589.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111591.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111592.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111593.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111595.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111596.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111598.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111599.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111601.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111603.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111604.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111605.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111606.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111608.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111610.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111611.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111612.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111614.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111615.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111617.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111618.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111619.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111620.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111621.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111623.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111624.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111625.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111626.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111627.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111628.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111631.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111633.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111634.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111635.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111636.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111639.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111641.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111646.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111648.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111650.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111652.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111654.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111655.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111659.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111660.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111661.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111663.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111673.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111676.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111677.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111678.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111679.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111680.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111681.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111682.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111684.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111687.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111688.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111689.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111690.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111692.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111693.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111694.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111695.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111696.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111697.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111698.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111700.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111701.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111702.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111703.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111707.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111709.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111710.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111711.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111716.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111717.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111718.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111719.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111721.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111724.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111725.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111726.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111727.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111728.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111729.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111732.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111733.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111736.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111737.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111740.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111744.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111745.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111746.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111747.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111748.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111749.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111750.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111751.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111752.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111753.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111754.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111755.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111756.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111757.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111758.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111759.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111760.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111761.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111763.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111764.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111766.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111767 - Copy.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\111767.BMP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\photosStudents\2036.BMP" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/students/addMultiStudents.ejs" afterPath="$PROJECT_DIR$/views/students/addMultiStudents.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/users/students.js" afterPath="$PROJECT_DIR$/routes/users/students.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SMECS_express_EJS.iws" />
@@ -32,11 +357,11 @@
       <content type="file-editors">
         <state>
           <leaf>
-            <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/routes/authentication/login.js">
+            <file leaf-file-name="students.js" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/routes/users/students.js">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="0.0" vertical-offset="1105" max-vertical-offset="2040">
-                    <caret line="65" column="49" selection-start-line="65" selection-start-column="49" selection-end-line="65" selection-end-column="49" />
+                  <state vertical-scroll-proportion="0.3342071" vertical-offset="1156" max-vertical-offset="7072">
+                    <caret line="83" column="26" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="26" />
                     <folding />
                   </state>
                 </provider>
@@ -45,17 +370,17 @@
             <file leaf-file-name="updateAlertGroups.ejs" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/views/alertGroups/updateAlertGroups.ejs">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="-16.346153" vertical-offset="561" max-vertical-offset="2057">
+                  <state vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="2057">
                     <caret line="58" column="37" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="37" />
                     <folding />
                   </state>
                 </provider>
               </entry>
             </file>
-            <file leaf-file-name="alerts.js" pinned="false" current-in-tab="true">
+            <file leaf-file-name="alerts.js" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/routes/alerts/alerts.js">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="0.37876803" vertical-offset="2227" max-vertical-offset="7939">
+                  <state vertical-scroll-proportion="0.0" vertical-offset="2227" max-vertical-offset="7939">
                     <caret line="148" column="36" selection-start-line="148" selection-start-column="24" selection-end-line="148" selection-end-column="36" />
                     <folding />
                   </state>
@@ -65,8 +390,8 @@
             <file leaf-file-name="1.chooseAlert.js" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/routes/alerts/sendingReceiving/1.chooseAlert.js">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="0.0" vertical-offset="274" max-vertical-offset="1955">
-                    <caret line="23" column="31" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="31" />
+                  <state vertical-scroll-proportion="0.0" vertical-offset="478" max-vertical-offset="1955">
+                    <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
                     <folding />
                   </state>
                 </provider>
@@ -75,8 +400,8 @@
             <file leaf-file-name="2.sendingAlert.js" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/routes/alerts/sendingReceiving/2.sendingAlert.js">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="166.96552" vertical-offset="5930" max-vertical-offset="6664">
-                    <caret line="64" column="35" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="35" />
+                  <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6664">
+                    <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
                     <folding />
                   </state>
                 </provider>
@@ -85,7 +410,7 @@
             <file leaf-file-name="3.whoReceiveAlert.js" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/routes/alerts/sendingReceiving/3.whoReceiveAlert.js">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="-11.137931" vertical-offset="714" max-vertical-offset="1734">
+                  <state vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="1734">
                     <caret line="61" column="61" selection-start-line="61" selection-start-column="61" selection-end-line="61" selection-end-column="61" />
                     <folding />
                   </state>
@@ -95,7 +420,7 @@
             <file leaf-file-name="4.saveAlert.js" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/routes/alerts/sendingReceiving/4.saveAlert.js">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3009">
+                  <state vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="3009">
                     <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
                     <folding />
                   </state>
@@ -115,7 +440,7 @@
             <file leaf-file-name="mutualElements.js" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/routes/alerts/sendingReceiving/saveAlertFunc/mutualElements.js">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1071">
+                  <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1071">
                     <caret line="12" column="42" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="42" />
                     <folding />
                   </state>
@@ -153,18 +478,28 @@
             <file leaf-file-name="updateAlerts.ejs" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/views/alerts/updateAlerts.ejs">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="-18.961538" vertical-offset="2448" max-vertical-offset="4777">
+                  <state vertical-scroll-proportion="0.0" vertical-offset="2448" max-vertical-offset="4777">
                     <caret line="173" column="68" selection-start-line="173" selection-start-column="57" selection-end-line="173" selection-end-column="68" />
                     <folding />
                   </state>
                 </provider>
               </entry>
             </file>
-            <file leaf-file-name="chooseAlert.ejs" pinned="false" current-in-tab="false">
+            <file leaf-file-name="chooseAlert.ejs" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/views/alerts/sending/chooseAlert.ejs">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="0.0" vertical-offset="1479" max-vertical-offset="2839">
-                    <caret line="93" column="119" selection-start-line="93" selection-start-column="11" selection-end-line="93" selection-end-column="119" />
+                  <state vertical-scroll-proportion="0.06919946" vertical-offset="0" max-vertical-offset="2839">
+                    <caret line="3" column="88" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="88" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="floor.ejs" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/views/alerts/sending/floor.ejs">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state vertical-scroll-proportion="-78.46154" vertical-offset="0" max-vertical-offset="2397">
+                    <caret line="120" column="31" selection-start-line="120" selection-start-column="31" selection-end-line="120" selection-end-column="31" />
                     <folding />
                   </state>
                 </provider>
@@ -173,7 +508,7 @@
             <file leaf-file-name="notes.ejs" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/views/alerts/sending/notes.ejs">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="-5.8846154" vertical-offset="1887" max-vertical-offset="3179">
+                  <state vertical-scroll-proportion="0.0" vertical-offset="1887" max-vertical-offset="3179">
                     <caret line="120" column="33" selection-start-line="120" selection-start-column="31" selection-end-line="120" selection-end-column="33" />
                     <folding />
                   </state>
@@ -200,10 +535,10 @@
                 </provider>
               </entry>
             </file>
-            <file leaf-file-name="receiveAlert.ejs" pinned="false" current-in-tab="true">
+            <file leaf-file-name="receiveAlert.ejs" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/views/alerts/receiving/receiveAlert.ejs">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="-2.4571824" vertical-offset="4159" max-vertical-offset="7429">
+                  <state vertical-scroll-proportion="68.42308" vertical-offset="4159" max-vertical-offset="7429">
                     <caret line="140" column="52" selection-start-line="140" selection-start-column="37" selection-end-line="140" selection-end-column="52" />
                     <folding />
                   </state>
@@ -234,6 +569,24 @@
         </state>
       </content>
     </window>
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="addMultiStudents.ejs" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/views/students/addMultiStudents.ejs">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state vertical-scroll-proportion="0.5762712" vertical-offset="0" max-vertical-offset="833">
+                    <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -241,11 +594,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.4827585" vertical-offset="10007" max-vertical-offset="12121">
-              <caret line="598" column="34" selection-start-line="598" selection-start-column="13" selection-end-line="598" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.64358455" vertical-offset="1996" max-vertical-offset="12138">
+              <caret line="136" column="39" selection-start-line="136" selection-start-column="39" selection-end-line="136" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -274,8 +627,18 @@
       <file leaf-file-name="addAlerts.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/alerts/addAlerts.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="1683">
-              <caret line="20" column="19" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="19" />
+            <state vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="1683">
+              <caret line="5" column="24" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addPhoto.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/students/addPhoto.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="425">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -291,11 +654,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="auth.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="auth.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/authentication/auth.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3596154" vertical-offset="0" max-vertical-offset="884">
-              <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="884">
+              <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -309,8 +672,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/routes/permissions/permissions.js" />
-        <option value="$PROJECT_DIR$/views/alertGroups/updateAlertGroups.ejs" />
         <option value="$PROJECT_DIR$/views/alerts/updateAlerts.ejs" />
         <option value="$PROJECT_DIR$/views/utilities/showUtilities.ejs" />
         <option value="$PROJECT_DIR$/views/permissionGroups/updatePermissionsGroup.ejs" />
@@ -353,13 +714,15 @@
         <option value="$PROJECT_DIR$/views/api.ejs" />
         <option value="$PROJECT_DIR$/routes/dashboard.js" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/routes/authentication/auth.js" />
         <option value="$PROJECT_DIR$/routes/authentication/login.js" />
         <option value="$PROJECT_DIR$/routes/models.js" />
         <option value="$PROJECT_DIR$/routes/alerts/alerts.js" />
         <option value="$PROJECT_DIR$/routes/alerts/alertGroups.js" />
         <option value="$PROJECT_DIR$/routes/alerts/sendingReceiving/3.whoReceiveAlert.js" />
+        <option value="$PROJECT_DIR$/routes/users/students.js" />
+        <option value="$PROJECT_DIR$/routes/index.js" />
+        <option value="$PROJECT_DIR$/views/students/addMultiStudents.ejs" />
       </list>
     </option>
   </component>
@@ -397,7 +760,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -444,7 +806,69 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="students" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SMECS_express_EJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SMECS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="alerts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SMECS_express_EJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SMECS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alerts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sending" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SMECS_express_EJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SMECS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alerts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="receiving" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -592,32 +1016,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sendingReceiving" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="saveAlertFunc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SMECS_express_EJS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SMECS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alerts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="options" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -659,6 +1057,7 @@
       <pane id="PackagesPane">
         <subPane />
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1146,11 +1545,12 @@
       <workItem from="1508077976762" duration="27445000" />
       <workItem from="1508507483764" duration="28237000" />
       <workItem from="1508937657561" duration="32236000" />
+      <workItem from="1509222664362" duration="8765000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2974455000" />
+    <option name="totallyTimeSpent" value="2983220000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1173,8 +1573,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1432" y="-8" width="1456" height="876" extended-state="7" />
-    <editor active="true" />
+    <frame x="1432" y="-8" width="1456" height="876" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1261,20 +1661,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/paAddAnoun.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.92688173" vertical-offset="419" max-vertical-offset="1173">
-          <caret line="50" column="1" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/pa.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.086021505" vertical-offset="1150" max-vertical-offset="1615">
-          <caret line="70" column="12" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/utilities/addUtilities.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.45861602" vertical-offset="70" max-vertical-offset="4658">
@@ -1345,13 +1731,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/alerts/sending/floor.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1099" max-vertical-offset="2397">
-          <caret line="120" column="31" selection-start-line="120" selection-start-column="31" selection-end-line="120" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.167347" vertical-offset="1062" max-vertical-offset="1581">
@@ -1363,13 +1742,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334" vertical-offset="732" max-vertical-offset="4641">
           <caret line="58" column="18" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/users/students.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.008016" vertical-offset="2499" max-vertical-offset="7055">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1391,14 +1763,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1065" max-vertical-offset="1564">
           <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/alerts/addAlerts.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="1683">
-          <caret line="20" column="19" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -1448,54 +1812,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/alerts/createAlert.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1887" max-vertical-offset="3961">
-          <caret line="140" column="50" selection-start-line="140" selection-start-column="36" selection-end-line="140" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/alerts/sending/chooseAlert.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1479" max-vertical-offset="2839">
-          <caret line="93" column="119" selection-start-line="93" selection-start-column="11" selection-end-line="93" selection-end-column="119" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/alerts/sending/student.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1887" max-vertical-offset="2720">
-          <caret line="140" column="31" selection-start-line="140" selection-start-column="31" selection-end-line="140" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/alerts/sending/multiSelection.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1486" max-vertical-offset="2346">
-          <caret line="101" column="156" selection-start-line="101" selection-start-column="145" selection-end-line="101" selection-end-column="156" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="340">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/login.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="544">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/authentication/email.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="2057">
@@ -1504,43 +1820,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/alerts/updateAlerts.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.961538" vertical-offset="2448" max-vertical-offset="4777">
-          <caret line="173" column="68" selection-start-line="173" selection-start-column="57" selection-end-line="173" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/alerts/sending/notes.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154" vertical-offset="1887" max-vertical-offset="3179">
-          <caret line="120" column="33" selection-start-line="120" selection-start-column="31" selection-end-line="120" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.4827585" vertical-offset="10007" max-vertical-offset="12121">
-          <caret line="598" column="34" selection-start-line="598" selection-start-column="13" selection-end-line="598" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/alerts/receiving/receiveAlert.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.4571824" vertical-offset="4159" max-vertical-offset="7429">
-          <caret line="140" column="52" selection-start-line="140" selection-start-column="37" selection-end-line="140" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bin/www">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.6807692" vertical-offset="1299" max-vertical-offset="1819">
           <caret line="25" column="14" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1548,7 +1831,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="520">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1556,7 +1838,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19615385" vertical-offset="0" max-vertical-offset="1819">
           <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1564,15 +1845,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.71686745" vertical-offset="0" max-vertical-offset="664">
           <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/alerts/sendingReceiving/1.chooseAlert.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1955">
-          <caret line="23" column="31" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1610,40 +1882,168 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/alertGroups/updateAlertGroups.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.346153" vertical-offset="561" max-vertical-offset="2057">
+        <state vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="2057">
           <caret line="58" column="37" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/alerts/sendingReceiving/2.sendingAlert.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="166.96552" vertical-offset="5930" max-vertical-offset="6664">
-          <caret line="64" column="35" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/authentication/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3596154" vertical-offset="0" max-vertical-offset="884">
-          <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/alerts/sendingReceiving/3.whoReceiveAlert.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.137931" vertical-offset="714" max-vertical-offset="1734">
+        <state vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="1734">
           <caret line="61" column="61" selection-start-line="61" selection-start-column="61" selection-end-line="61" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/alerts/createAlert.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1887" max-vertical-offset="3961">
+          <caret line="140" column="50" selection-start-line="140" selection-start-column="36" selection-end-line="140" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/alerts/updateAlerts.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2448" max-vertical-offset="4777">
+          <caret line="173" column="68" selection-start-line="173" selection-start-column="57" selection-end-line="173" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/alerts/sending/notes.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1887" max-vertical-offset="3179">
+          <caret line="120" column="33" selection-start-line="120" selection-start-column="31" selection-end-line="120" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/alerts/sending/student.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1887" max-vertical-offset="2720">
+          <caret line="140" column="31" selection-start-line="140" selection-start-column="31" selection-end-line="140" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/alerts/sending/multiSelection.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1486" max-vertical-offset="2346">
+          <caret line="101" column="156" selection-start-line="101" selection-start-column="145" selection-end-line="101" selection-end-column="156" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="340">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/login.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="544">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/alerts/alerts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37876803" vertical-offset="2227" max-vertical-offset="7939">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2227" max-vertical-offset="7939">
           <caret line="148" column="36" selection-start-line="148" selection-start-column="24" selection-end-line="148" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/authentication/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="884">
+          <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/alerts/sendingReceiving/1.chooseAlert.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="478" max-vertical-offset="1955">
+          <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/alerts/receiving/receiveAlert.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="68.42308" vertical-offset="4159" max-vertical-offset="7429">
+          <caret line="140" column="52" selection-start-line="140" selection-start-column="37" selection-end-line="140" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/alerts/sendingReceiving/2.sendingAlert.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6664">
+          <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/alerts/addAlerts.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="1683">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/alerts/sending/floor.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-78.46154" vertical-offset="0" max-vertical-offset="2397">
+          <caret line="120" column="31" selection-start-line="120" selection-start-column="31" selection-end-line="120" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/alerts/sending/chooseAlert.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06919946" vertical-offset="0" max-vertical-offset="2839">
+          <caret line="3" column="88" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/students/addPhoto.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="520">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/users/students.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3342071" vertical-offset="1156" max-vertical-offset="7072">
+          <caret line="83" column="26" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/students/addMultiStudents.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5762712" vertical-offset="0" max-vertical-offset="833">
+          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64358455" vertical-offset="1996" max-vertical-offset="12138">
+          <caret line="136" column="39" selection-start-line="136" selection-start-column="39" selection-end-line="136" selection-end-column="39" />
           <folding />
         </state>
       </provider>
