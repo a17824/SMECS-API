@@ -29,7 +29,7 @@ module.exports.show = function(req, res, next) {
 
 
     ],function(err, results){
-        console.log(results[2]);
+        //console.log(results[2]);
         res.render('students/showStudents',{
             title:'STUDENTS',
             students: results[0],
@@ -81,7 +81,6 @@ module.exports.addMultiple = function (req, res){
     res.render('students/addMultiStudents', { title: 'ADD MULTIPLE STUDENTS'});
 };
 module.exports.addMultiplePost = function (req, res){
-    console.log('entrou');
     var form = new formidable.IncomingForm();
     form.parse(req, function(err, fields, files) {
         console.log(util.inspect({fields: fields, files: files}));
@@ -315,80 +314,90 @@ module.exports.addMultiplePhotos = function (req, res){
 //var io = require('socket.io');
 module.exports.addMultiplePhotosPost = function (req, res){
 
-    var form = new formidable.IncomingForm();
+    models.Students.find(function (err, result) {
 
-    form.multiples = true;
+        var form = new formidable.IncomingForm();
 
-    form.parse(req, function(err, fields, files) {
-        //console.log(util.inspect({fields: fields, files: files}));
-    });
+        form.multiples = true;
 
-    form.on('progress', function(bytesReceived, bytesExpected) {
-        var percent_complete = (bytesReceived / bytesExpected) * 100;
-        console.log(percent_complete.toFixed(2));
-        //io.sockets.emit('uploadProgress', ((bytesReceived * 100)/bytesExpected));
-    });
+        form.parse(req, function(err, fields, files) {
+            //console.log(util.inspect({fields: fields, files: files}));
+        });
 
-    form.on('end', function(fields, files) {
-        var new_location = 'public/photosStudents/'; /* Location where we want to copy the uploaded file */
+        form.on('progress', function(bytesReceived, bytesExpected) {
+            var percent_complete = (bytesReceived / bytesExpected) * 100;
+            console.log(percent_complete.toFixed(2));
+            //io.sockets.emit('uploadProgress', ((bytesReceived * 100)/bytesExpected));
+        });
 
-        //delete all Photos and other files in Student Photo folder before copy new photos
-        if (this.openedFiles[0].name) {// if a file is selected do this
-            try { var filesToDelete = fs.readdirSync(new_location); }
-            catch(e) { return; }
-            if (filesToDelete.length > 0)
-                for (var x = 0; x < filesToDelete.length; x++) {
-                    var fileP = new_location + filesToDelete[x];
-                    if (fs.statSync(fileP).isFile())
-                        fs.unlinkSync(fileP);
-                    else
-                        console.log("No files to Delete");
-                }
-        } //-----------END of delete all Photos and other files in Student Photo folder before copy new photos
+        form.on('end', function(fields, files) {
+            var new_location = 'public/photosStudents/'; // Location where we want to copy the uploaded file
 
-        for(var i = 0; i < this.openedFiles.length; i++) {
-            var temp_path = this.openedFiles[i].path; /* Temporary location of our uploaded file */
-            var file_name = this.openedFiles[i].name; /* The file name of the uploaded file */
-
-            var file_name_no_ext = file_name.replace(/\.[^/.]+$/, ""); /* removes extension */
-            var extension = path.extname(this.openedFiles[i].name);
-
+            //delete all Photos and other files in Student Photo folder before copy new photos
             if (this.openedFiles[0].name) {// if a file is selected do this
+                try { var filesToDelete = fs.readdirSync(new_location); }
+                catch(e) { return; }
+                if (filesToDelete.length > 0)
+                    for (var x = 0; x < filesToDelete.length; x++) {
+                        var fileP = new_location + filesToDelete[x];
+                        if (fs.statSync(fileP).isFile())
+                            fs.unlinkSync(fileP);
+                        else
+                            console.log("No files to Delete");
+                    }
+            } //-----------END of delete all Photos and other files in Student Photo folder before copy new photos
 
-                fs.copySync(temp_path, new_location + file_name); // save file
-                fs.unlinkSync(temp_path, function (err) { //delete file from temp folder (unlink) -------
+            for(var i = 0; i < this.openedFiles.length; i++) {
+                var temp_path = this.openedFiles[i].path; // Temporary location of our uploaded file
+                var file_name = this.openedFiles[i].name; // The file name of the uploaded file
+
+                var file_name_no_ext = file_name.replace(/\.[^/.]+$/, ""); // removes extension
+
+                if (this.openedFiles[0].name) {// if a file is selected do this
+
+                    fs.copySync(temp_path, new_location + file_name); // save file
+                    fs.unlinkSync(temp_path, function (err) { //delete file from temp folder (unlink) -------
+                        if (err) {
+                            //return res.send(500, 'Something went wrong');
+                        }
+                    });//------------------------------#end - unlink
+                }else { // if no file is selected delete temp file
+                    console.log('no files added');
+                    //delete file from temp folder-------
+                    fs.unlink(temp_path, function (err) {
+                        if (err) {
+                            return res.send(500, 'Something went wrong');
+                        }
+                    });
+                    //------------------#end - unlink
+                }
+
+                for(var x = 0; x < result.length; x++) {
+
                     if (err) {
-                        //return res.send(500, 'Something went wrong');
+                        console.log(err)
                     }
-                });//------------------------------#end - unlink
-            }else { // if no file is selected delete temp file
-                console.log('no files added');
-                //delete file from temp folder-------
-                fs.unlink(temp_path, function (err) {
-                    if (err) {
-                        return res.send(500, 'Something went wrong');
+
+                    if (!result) {
+                        //console.log(result);
+                        console.log("No Student found");
                     }
-                });
-                //------------------#end - unlink
+
+                    if ( result[x].studentID == file_name_no_ext ) {
+                        console.log('file_name = ' + file_name);
+                        console.log('result[x].studentID = ' + result[x].studentID);
+                        result[x].photo = file_name; //save uploaded file name to user.photo
+                        result[x].save();
+                        console.log("success! saved " + file_name);
+                    }
+
+                }
+
             }
-            //console.log(file_name);
-            models.Students.findOne({ studentID: file_name_no_ext }, function (err, result) {
-                //console.log(file_name);
-                if (err) { console.log(err) }
+        });
+        res.redirect('/students/showStudents');
 
-                if (!result) {
-                    //console.log(result);
-                    console.log("No Student found");
-                }
-                else {
-                    result.photo = result.studentID + extension; //save uploaded file name to user.photo
-                    result.save();
-                    console.log("success! saved " + result.studentID + extension);
-                }
-            });
-        }
     });
-    res.redirect('/students/showStudents');
 };
 //-----------end Batch Upload photos
 

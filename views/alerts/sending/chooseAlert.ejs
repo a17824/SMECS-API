@@ -102,15 +102,15 @@
                     <% if (aclReal.checkBoxID == 's' + userAuthRoleID + alert.alertID && aclReal.checkBoxValue == true) {%>
                         <input type="radio" name="alert" id=<%= alert.alertID %> value="<%= alert.alertSlugName %>" >
                         <% if (alert.alertTypeID == 2) {%>
-                            <label for="alert" style="color: red"><%= alert.alertName %></label><br>
+        <%= alert.alertID %> <label for="alert" style="color: red"><%= alert.alertName %></label><br>
                         <% } if (alert.alertTypeID == 3){ %>
-                            <label for="alert" style="color: green"><%= alert.alertName %></label><br>
+        <%= alert.alertID %>         <label for="alert" style="color: green"><%= alert.alertName %></label><br>
                         <% } if (alert.alertTypeID == 4){ %>
-                            <label for="alert" style="color: blue"><%= alert.alertName %></label><br>
+        <%= alert.alertID %>          <label for="alert" style="color: blue"><%= alert.alertName %></label><br>
                         <% } if (alert.alertTypeID == 5){ %>
-                            <label for="alert" style="color: #e3c300"><%= alert.alertName %></label><br>
+        <%= alert.alertID %>          <label for="alert" style="color: #e3c300"><%= alert.alertName %></label><br>
                         <% } if (alert.alertTypeID > 5){ %>
-                            <label for="alert"><%= alert.alertName %></label><br>
+        <%= alert.alertID %>          <label for="alert"><%= alert.alertName %></label><br>
                         <% } %>
                     <% }  %>
                 <% }); %>

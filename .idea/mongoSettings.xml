@@ -11,6 +11,16 @@
             </list>
           </option>
         </ServerConfiguration>
+        <ServerConfiguration>
+          <option name="label" value="online database" />
+          <option name="password" value="database2" />
+          <option name="serverUrls">
+            <list>
+              <option value="ds249415.mlab.com:49415" />
+            </list>
+          </option>
+          <option name="username" value="ricky" />
+        </ServerConfiguration>
       </list>
     </option>
     <option name="shellPath" value="C:\Program Files\MongoDB\Server\3.0\bin\mongo.exe" />

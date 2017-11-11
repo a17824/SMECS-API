@@ -61,6 +61,7 @@ app.use('/', login);
 
 //connecting to database
 mongoose.connect('mongodb://localhost/SMECS_database');
+//mongoose.connect('mongodb://ricky:database2>@ds249415.mlab.com:49415/smecs_database');
 //if we connect successfully or if a connection error occurs
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function (callback) {
