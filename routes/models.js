@@ -165,6 +165,7 @@ var AlertSentTempSchema = new mongoose.Schema({
     sentTime: String,
     notePlaceholder: String,
     testModeON: Boolean,
+    testModeOnArrays: [],
     request911Call: { type: Boolean, default: false },
     whoCanCall911: [String],
 
