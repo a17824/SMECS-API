@@ -139,7 +139,7 @@
 
     <% if (alert.alertNameID == 7) {%>
     <label for="whereToEvacuate"><b>Where to Evacuate:</b>(optional)</label><br>
-    <textarea id="whereToEvacuate" cols="33" placeholder="ex: ex: church" ><%= alert.evacuateWhereTo %></textarea><br><br>
+    <textarea id="whereToEvacuate" cols="33" placeholder="ex: church" ><%= alert.evacuateWhereTo %></textarea><br><br>
     <% } %>
 
     <% if (alert.alertNameID == 6) {%>
@@ -147,7 +147,7 @@
     <% } else { %>
     <label for="note"><b>Note:</b>(optional)</label><br>
     <% }%>
-    <textarea id="note" cols="33"  placeholder="<%= alert.notePlaceholder %>"><%= alert.note %></textarea><br><br>
+    <textarea id="note" cols="33"  placeholder="<%= alert.placeholderNote %>"><%= alert.note %></textarea><br><br>
 
 
     <% if (alert.alertNameID == 5 ||

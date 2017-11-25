@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c696042-d8e9-4acc-bd07-eb13244ccc1f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/alerts/sending/chooseAlert.ejs" afterPath="$PROJECT_DIR$/views/alerts/sending/chooseAlert.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/models.js" afterPath="$PROJECT_DIR$/routes/models.js" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\alertSentInfo\floorsPhotos\59f1df6c2a4a5fb01168f686_Second_Floor_740x560.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\alertSentInfo\floorsPhotos\59f1df912a4a5fb01168f687_Second_Floor_740x560.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Banshee\Desktop\SMECS\public\alertSentInfo\floorsPhotos\59f1e02d2a4a5fb01168f688_First_Floor_740x560.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/alerts/sendingReceiving/1.chooseAlert.js" afterPath="$PROJECT_DIR$/routes/alerts/sendingReceiving/1.chooseAlert.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/alerts/sending/notes.ejs" afterPath="$PROJECT_DIR$/views/alerts/sending/notes.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SMECS_express_EJS.iws" />
@@ -44,21 +47,21 @@
                 </provider>
               </entry>
             </file>
-            <file leaf-file-name="1.chooseAlert.js" pinned="false" current-in-tab="true">
+            <file leaf-file-name="1.chooseAlert.js" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/routes/alerts/sendingReceiving/1.chooseAlert.js">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="0.22018349" vertical-offset="19" max-vertical-offset="1955">
-                    <caret line="11" column="76" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="76" />
+                  <state vertical-scroll-proportion="-4.051724" vertical-offset="921" max-vertical-offset="1955">
+                    <caret line="68" column="27" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
                     <folding />
                   </state>
                 </provider>
               </entry>
             </file>
-            <file leaf-file-name="2.sendingAlert.js" pinned="false" current-in-tab="false">
+            <file leaf-file-name="2.sendingAlert.js" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/routes/alerts/sendingReceiving/2.sendingAlert.js">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="6664">
-                    <caret line="182" column="57" selection-start-line="182" selection-start-column="52" selection-end-line="182" selection-end-column="57" />
+                  <state vertical-scroll-proportion="0.621232" vertical-offset="4932" max-vertical-offset="6664">
+                    <caret line="318" column="9" selection-start-line="318" selection-start-column="9" selection-end-line="318" selection-end-column="9" />
                     <folding />
                   </state>
                 </provider>
@@ -95,7 +98,7 @@
             <file leaf-file-name="chooseAlert.ejs" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/views/alerts/sending/chooseAlert.ejs">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="-16.346153" vertical-offset="204" max-vertical-offset="2856">
+                  <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="2856">
                     <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
                     <folding />
                   </state>
@@ -115,8 +118,8 @@
             <file leaf-file-name="notes.ejs" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/views/alerts/sending/notes.ejs">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="0.6878531" vertical-offset="2012" max-vertical-offset="3179">
-                    <caret line="147" column="20" selection-start-line="147" selection-start-column="16" selection-end-line="147" selection-end-column="20" />
+                  <state vertical-scroll-proportion="0.7175141" vertical-offset="1889" max-vertical-offset="3179">
+                    <caret line="141" column="68" selection-start-line="141" selection-start-column="58" selection-end-line="141" selection-end-column="68" />
                     <folding />
                   </state>
                 </provider>
@@ -240,7 +243,6 @@
         <option value="$PROJECT_DIR$/routes/alerts/sendingReceiving/saveAlertFunc/mutualElements.js" />
         <option value="$PROJECT_DIR$/views/alerts/sending/requestAssistance.ejs" />
         <option value="$PROJECT_DIR$/views/alerts/sending/student.ejs" />
-        <option value="$PROJECT_DIR$/routes/alerts/sendingReceiving/1.chooseAlert.js" />
         <option value="$PROJECT_DIR$/routes/alerts/sendingReceiving/4.saveAlert.js" />
         <option value="$PROJECT_DIR$/views/alerts/sending/floor.ejs" />
         <option value="$PROJECT_DIR$/views/alerts/receiving/receiveAlert.ejs" />
@@ -260,8 +262,9 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/routes/users/students.js" />
         <option value="$PROJECT_DIR$/routes/models.js" />
-        <option value="$PROJECT_DIR$/views/alerts/sending/notes.ejs" />
         <option value="$PROJECT_DIR$/views/alerts/sending/chooseAlert.ejs" />
+        <option value="$PROJECT_DIR$/routes/alerts/sendingReceiving/1.chooseAlert.js" />
+        <option value="$PROJECT_DIR$/views/alerts/sending/notes.ejs" />
       </list>
     </option>
   </component>
@@ -300,9 +303,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -596,6 +596,9 @@
             </PATH_ELEMENT>
           </PATH>
         </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane />
       </pane>
     </panes>
   </component>
@@ -1089,12 +1092,13 @@
       <workItem from="1510350774107" duration="2368000" />
       <workItem from="1510353588056" duration="10182000" />
       <workItem from="1510372801384" duration="3621000" />
-      <workItem from="1510957667980" duration="12762000" />
+      <workItem from="1510957667980" duration="12814000" />
+      <workItem from="1511566730889" duration="5681000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3023822000" />
+    <option name="totallyTimeSpent" value="3029555000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1117,8 +1121,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1432" y="-8" width="1456" height="876" extended-state="7" />
-    <editor active="true" />
+    <frame x="1432" y="-8" width="1456" height="876" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1130,8 +1134,8 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33983287" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12764457" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33983287" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12750717" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32451254" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17406876" sideWeight="0.49913043" order="0" side_tool="false" content_ui="combo" />
@@ -1476,6 +1480,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="9913" max-vertical-offset="12138">
+          <caret line="596" column="136" selection-start-line="596" selection-start-column="0" selection-end-line="596" selection-end-column="136" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/users/students.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4879" max-vertical-offset="7225">
+          <caret line="317" column="0" selection-start-line="317" selection-start-column="0" selection-end-line="317" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/models.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1502242" vertical-offset="2343" max-vertical-offset="6375">
+          <caret line="168" column="4" selection-start-line="168" selection-start-column="4" selection-end-line="168" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/alerts/sendingReceiving/3.whoReceiveAlert.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="1734">
+          <caret line="78" column="35" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/alerts/sendingReceiving/4.saveAlert.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1071" max-vertical-offset="3009">
+          <caret line="92" column="23" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/alerts/sending/chooseAlert.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="2856">
+          <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/alerts/sending/floor.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="2397">
@@ -1508,74 +1560,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="9913" max-vertical-offset="12138">
-          <caret line="596" column="136" selection-start-line="596" selection-start-column="0" selection-end-line="596" selection-end-column="136" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/users/students.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4879" max-vertical-offset="7225">
-          <caret line="317" column="0" selection-start-line="317" selection-start-column="0" selection-end-line="317" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/alerts/sendingReceiving/2.sendingAlert.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="6664">
-          <caret line="182" column="57" selection-start-line="182" selection-start-column="52" selection-end-line="182" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/alerts/sending/chooseAlert.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.346153" vertical-offset="204" max-vertical-offset="2856">
-          <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/alerts/sendingReceiving/3.whoReceiveAlert.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="1734">
-          <caret line="78" column="35" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/alerts/sendingReceiving/4.saveAlert.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1071" max-vertical-offset="3009">
-          <caret line="92" column="23" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/alerts/sendingReceiving/1.chooseAlert.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22018349" vertical-offset="19" max-vertical-offset="1955">
-          <caret line="11" column="76" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="76" />
+        <state vertical-scroll-proportion="-4.051724" vertical-offset="921" max-vertical-offset="1955">
+          <caret line="68" column="27" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/alerts/sending/notes.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6878531" vertical-offset="2012" max-vertical-offset="3179">
-          <caret line="147" column="20" selection-start-line="147" selection-start-column="16" selection-end-line="147" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.7175141" vertical-offset="1889" max-vertical-offset="3179">
+          <caret line="141" column="68" selection-start-line="141" selection-start-column="58" selection-end-line="141" selection-end-column="68" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/models.js">
+    <entry file="file://$PROJECT_DIR$/routes/alerts/sendingReceiving/2.sendingAlert.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1502242" vertical-offset="2343" max-vertical-offset="6375">
-          <caret line="168" column="4" selection-start-line="168" selection-start-column="4" selection-end-line="168" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.621232" vertical-offset="4932" max-vertical-offset="6664">
+          <caret line="318" column="9" selection-start-line="318" selection-start-column="9" selection-end-line="318" selection-end-column="9" />
           <folding />
         </state>
       </provider>

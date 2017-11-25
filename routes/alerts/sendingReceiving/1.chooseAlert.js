@@ -33,29 +33,29 @@ module.exports.show = function(req, res) {
 module.exports.showPost = function(req, res) {
     models.Alerts.find({'alertSlugName': req.body.alertSlugName}, function (err, alert) {
 
-        var placeholder;
-        if (req.body.alertID == 2){placeholder = 'ex: Stranger is on my classroom and refuses to leave';}
-        if (req.body.alertID == 3){placeholder = 'ex: Many people will be working on the corridors. Please follow the procedure for Lockdown';}
-        if (req.body.alertID == 4){placeholder = 'ex: Anna said he went to pick food';}
-        if (req.body.alertID == 5){placeholder = 'ex: gun is in his pants, left front pocket';}
-        if (req.body.alertID == 6){placeholder = 'ex: Corrosives and Flammable spill at lab';}
-        if (req.body.alertID == 7){placeholder = 'ex: there is a strange strong smell on the entire building';}
-        if (req.body.alertID == 8){placeholder = 'ex: the caller said bomb will detonate in 5 hours';}
-        if (req.body.alertID == 9){placeholder = 'ex: bomb is located behind door of classroom 12';}
-        if (req.body.alertID == 10){placeholder = 'ex: computer is on fire. Students are safe';}
-        if (req.body.alertID == 11){placeholder = 'ex: powder leaking from package';}
-        if (req.body.alertID == 12){placeholder = 'ex: SUV crash against us. No students got hurt';}
-        if (req.body.alertID == 13){placeholder = 'ex: road power pole broken. Don\'t use any school front door';}
-        if (req.body.alertID == 14 || req.body.alertID == 26 ){placeholder = 'ex: water is dark and smells gas on 1 floor';}
-        if (req.body.alertID == 15){placeholder = 'ex: gun is under student desk. It\'s first desk of second row';}
-        if (req.body.alertID == 16){placeholder = 'ex: student selling drugs in the restroom';}
-        if (req.body.alertID == 17){placeholder = 'ex: Mary is saying she saw Tom trying to cut his wrist';}
-        if (req.body.alertID == 18){placeholder = 'ex: Emma and Peter felt in stairs. Emma loss consciousness and Peter head is bleeding';}
-        if (req.body.alertID == 19){placeholder = 'ex: Charlotte cut her wrist';}
-        if (req.body.alertID == 20){placeholder = 'ex: Media are here because of Arthur incident.';}
-        if (req.body.alertID == 21){placeholder = 'ex: remember to not touch anything and put yellow tape around area.';}
-        if (req.body.alertID == 22){placeholder = 'ex: .';}
-        if (req.body.alertID == 23){placeholder = 'ex: Multiple students fighting.';}
+        var placeholderNote;
+        if (req.body.alertID == 2){placeholderNote = 'ex: Stranger is on my classroom and refuses to leave';}
+        if (req.body.alertID == 3){placeholderNote = 'ex: Many people will be working on the corridors. Please follow the procedure for Lockdown';}
+        if (req.body.alertID == 4){placeholderNote = 'ex: Anna said he went to pick food';}
+        if (req.body.alertID == 5){placeholderNote = 'ex: gun is in his pants, left front pocket';}
+        if (req.body.alertID == 6){placeholderNote = 'ex: Corrosives and Flammable spill at lab';}
+        if (req.body.alertID == 7){placeholderNote = 'ex: there is a strange strong smell on the entire building';}
+        if (req.body.alertID == 8){placeholderNote = 'ex: the caller said bomb will detonate in 5 hours';}
+        if (req.body.alertID == 9){placeholderNote = 'ex: bomb is located behind door of classroom 12';}
+        if (req.body.alertID == 10){placeholderNote = 'ex: computer is on fire. Students are safe';}
+        if (req.body.alertID == 11){placeholderNote = 'ex: powder leaking from package';}
+        if (req.body.alertID == 12){placeholderNote = 'ex: SUV crash against us. No students got hurt';}
+        if (req.body.alertID == 13){placeholderNote = 'ex: road power pole broken. Don\'t use any school front door';}
+        if (req.body.alertID == 14 || req.body.alertID == 26 ){placeholderNote = 'ex: water is dark and smells gas on 1 floor';}
+        if (req.body.alertID == 15){placeholderNote = 'ex: gun is under student desk. It\'s first desk of second row';}
+        if (req.body.alertID == 16){placeholderNote = 'ex: student selling drugs in the restroom';}
+        if (req.body.alertID == 17){placeholderNote = 'ex: Mary is saying she saw Tom trying to cut his wrist';}
+        if (req.body.alertID == 18){placeholderNote = 'ex: Emma and Peter felt in stairs. Emma loss consciousness and Peter head is bleeding';}
+        if (req.body.alertID == 19){placeholderNote = 'ex: Charlotte cut her wrist';}
+        if (req.body.alertID == 20){placeholderNote = 'ex: Media are here because of Arthur incident.';}
+        if (req.body.alertID == 21){placeholderNote = 'ex: remember to not touch anything and put yellow tape around area.';}
+        if (req.body.alertID == 22){placeholderNote = 'ex: .';}
+        if (req.body.alertID == 23){placeholderNote = 'ex: Multiple students fighting.';}
 
         var alertTemp1 = new models.AlertSentTemp({
             alertGroupID: alert[0].alertTypeID,
@@ -66,7 +66,7 @@ module.exports.showPost = function(req, res) {
             testModeON: req.body.testModeON,
             request911Call: alert[0].alertRequest911Call,
             whoCanCall911: alert[0].whoCanCall911,
-            notePlaceholder: placeholder
+            placeholderNote: placeholderNote
         });
         alertTemp1.save();
 
