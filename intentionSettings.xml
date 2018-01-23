@@ -1,0 +1,9 @@
+<application>
+  <component name="IntentionManagerSettings">
+    <ignoreAction name="JavaScript/Conditional Operator/Flip If" />
+    <ignoreAction name="JavaScript/Declaration/Split Declaration And Move To Scope Start" />
+    <ignoreAction name="JavaScript/Declaration/Split Declaration And Initialization" />
+    <ignoreAction name="JavaScript/Control Flow/Split Else If" />
+    <ignoreAction name="JavaScript/Control Flow/Remove Braces" />
+  </component>
+</application>
