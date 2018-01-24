@@ -105,7 +105,7 @@ module.exports.postReviewAlert = function (req, res, next) {
                 // verifies secret and checks exp
                 jwt.verify(token, config.secret, function (err, decoded) {
                     if (err) {
-                        return res.json({success: false, message: 'Failed to authenticate token.'});
+                        return res.json({ success: false, message: 'Failed to authenticate token.' });
                     } else {
                         // if everything is good, save to request for use in other routes
 
@@ -120,9 +120,9 @@ module.exports.postReviewAlert = function (req, res, next) {
         }
 
     ], function (err, tempAlert) {
-        if(err) {
+        if (err) {
             console.log(err);
-            res.send({message: 'something went wrong'});
+            res.send({ message: 'something went wrong' });
         } else {
 
 
@@ -138,7 +138,7 @@ module.exports.postReviewAlert = function (req, res, next) {
                     sendPush(message);
                 }
             });
-            return res.json({success: true, message: 'Message sent', redirect: 'home'});
+            return res.json({ success: true, message: 'Message sent', redirect: 'home' });
 
             /********************************
              *                              *
@@ -153,11 +153,19 @@ function sendPush(message) {
     var serverKey = 'AIzaSyAQHCWvoiCkDk_8_Aur1rpUInk-Sx_uilk';
     var fcm = new FCM(serverKey);
 
-    fcm.send(message, function(err, response){
+    fcm.send(message, function (err, response) {
         if (err) {
             console.log("Something has gone wrong!", err);
         } else {
             console.log("Successfully sent with response: ", response);
         }
     });
+}
+
+module.exports.photosStudents = function (req, res, next) {
+    res.sendFile('/Users/rna3/Google Drive/SMECS-API/public/photosStudents/' + req.params.file);
+}
+
+module.exports.floorPlans = function (req, res, next) {
+    res.sendFile('/Users/rna3/Google Drive/SMECS-API/public/floorPlans/' + req.params.file);
 }
