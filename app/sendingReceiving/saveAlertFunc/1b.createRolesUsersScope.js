@@ -26,7 +26,7 @@ module.exports.getUsersToReceiveAlert = function(req, res, alert) {
             arrayRoleID.push(doc.roleGroupID);
             arrayRoleName.push(doc.roleGroupName);
         });
-        if (arrayRoleID.length < 1) {
+        if (arrayRoleID.length < 1 || arrayRoleID == null) {
             console.log('No people on this scope to send this alert');
             res.json({success: false,
                 redirect: 'home'});
@@ -42,8 +42,12 @@ module.exports.getUsersToReceiveAlert = function(req, res, alert) {
 
                 //save to AlertSentTemp all ROLES and USERS that will receive alert
                 models.AlertSentTemp.findById({'_id': alert._id}, function(error, alertUpdate) {
-                    if(error){
-                        console.log('erro da primeira vez que se escolhe um alerta');
+                    if(error ||
+                        alertUpdate.sentRoleIDScope == null ||
+                        alertUpdate.sentRoleNameScope == null ||
+                        arrayRoleID == null ||
+                        arrayRoleName == null){
+                        console.log('erro da primeira vez que se escolhe um alerta. Please try again and contact the administrator if this message continues to show');
                         res.json({success: false,
                             redirect: 'home'});
                     }else {
