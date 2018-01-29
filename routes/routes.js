@@ -53,6 +53,9 @@ router.post('/sending/requestAssistance', auth.auth, sendingAlert.postRequestAss
 router.get('/sending/summary/:id', auth.auth, reviewAlert.reviewAlert, function(req, res) {});
 router.post('/sending/summary', auth.auth, reviewAlert.postReviewAlert, function(req, res) {});
 
+router.get('/public/photosStudents/:file', reviewAlert.photosStudents, function(req, res) {});
+router.get('/public/floorPlans/:file', reviewAlert.floorPlans, function(req, res) {});
+
 /* TO  DELETE ---------------------- */
 router.get('/users', auth.auth, users.usersGet, function(req, res) {});
 
