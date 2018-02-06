@@ -1,44 +1,29 @@
 //Dependencies
-var models = require('./../models/models');
 var async = require("async");
+var path = require('path');
+var jwt = require('jsonwebtoken'); // used to create, sign, and verify tokens
+
+var models = require('./../models/models');
 var create = require('./saveAlertFunc/3c.createAlertSentInfo.js');
 var floor = require('./saveAlertFunc/3a.savefloorFile.js');
 var student = require('./saveAlertFunc/3b.student.js');
-var jwt = require('jsonwebtoken'); // used to create, sign, and verify tokens
 var config = require('./../../config');
 var FCM = require('fcm-node');
 
 
 module.exports.reviewAlert = function (req, res) {
-    async.parallel([
-        function (callback) {
-            models.AlertSentTemp.findById(req.params.id).exec(callback);
-        },
-        function (callback) {
-            models.Utilities.find().exec(callback);
-        },
-        function (callback) {
-            models.RequestAssistance.find().exec(callback);
-        },
-        function (callback) {
-            models.Alerts.find().exec(callback);
-        }
-
-    ], function (err, results) {
-        if (results[0] != null) {
+    console.log(req.params._id);
+    models.AlertSentTemp.findById({ '_id': req.params.id }, function (err, results) {
+        if (results != null) {
             res.json({
                 success: true,
-                title: results[0].alertName,
-                testModeON: results[0].testModeON,
-                info: results[0],
-                utilities: results[1],
-                request: results[2],
-                alerts: results[2] // check if alert is softDeleted for Utilities Failure
+                results: results // check if alert is softDeleted for Utilities Failure
             });
         }
         else {
             res.json({
                 success: false,
+                message: 'Alert timed out, please try again.',
                 redirect: 'home'
             });
         }
@@ -51,48 +36,57 @@ module.exports.postReviewAlert = function (req, res, next) {
         function (callback) {
             models.AlertSentTemp.findById({ '_id': alertToUpdate1 }, function (err, tempAlert) {
                 //console.log(tempAlert);
+                if (!tempAlert) {
+                    console.log('TTL EXPIRED');
+                    res.json({
+                        success: false,
+                        message: 'Alert timed out, please try again.',
+                        redirect: 'home'
+                    });
+                }
+                else {
+                    // Alert that requires FLOOR function
+                    if (tempAlert.alertNameID == 2 ||
+                        tempAlert.alertNameID == 4 ||
+                        tempAlert.alertNameID == 5 ||
+                        tempAlert.alertNameID == 6 ||
+                        tempAlert.alertNameID == 7 ||
+                        tempAlert.alertNameID == 9 ||
+                        tempAlert.alertNameID == 10 ||
+                        tempAlert.alertNameID == 11 ||
+                        tempAlert.alertNameID == 14 ||
+                        tempAlert.alertNameID == 15 ||
+                        tempAlert.alertNameID == 16 ||
+                        tempAlert.alertNameID == 17 ||
+                        tempAlert.alertNameID == 18 ||
+                        tempAlert.alertNameID == 19 ||
+                        tempAlert.alertNameID == 23 ||
 
-                // Alert that requires FLOOR function
-                if (tempAlert.alertNameID == 2 ||
-                    tempAlert.alertNameID == 4 ||
-                    tempAlert.alertNameID == 5 ||
-                    tempAlert.alertNameID == 6 ||
-                    tempAlert.alertNameID == 7 ||
-                    tempAlert.alertNameID == 9 ||
-                    tempAlert.alertNameID == 10 ||
-                    tempAlert.alertNameID == 11 ||
-                    tempAlert.alertNameID == 14 ||
-                    tempAlert.alertNameID == 15 ||
-                    tempAlert.alertNameID == 16 ||
-                    tempAlert.alertNameID == 17 ||
-                    tempAlert.alertNameID == 18 ||
-                    tempAlert.alertNameID == 19 ||
-                    tempAlert.alertNameID == 23 ||
+                        tempAlert.alertNameID == 26) {
 
-                    tempAlert.alertNameID == 26) {
+                        floor.saveFloorFile(req, res, tempAlert);
 
-                    floor.saveFloorFile(req, res, tempAlert);
-
-                    if (tempAlert.alertNameID == 26) {
-                        /*******
-                         *  I delete the file that contains code for this alert. Deleted file is:
-                         *  C:\Users\Banshee\Desktop\to delete\4.toDelete.js
-                         * *********/
-                        //saveAlert.saveRequestAssistance(req, res, next);
+                        if (tempAlert.alertNameID == 26) {
+                            /*******
+                             *  I delete the file that contains code for this alert. Deleted file is:
+                             *  C:\Users\Banshee\Desktop\to delete\4.toDelete.js
+                             * *********/
+                            //saveAlert.saveRequestAssistance(req, res, next);
+                        }
                     }
+
+                    // Alert that requires STUDENT function
+                    if (tempAlert.alertNameID == 4 ||
+                        tempAlert.alertNameID == 5 ||
+                        tempAlert.alertNameID == 16 ||
+                        tempAlert.alertNameID == 17 ||
+                        tempAlert.alertNameID == 19) {
+
+                        student.saveStudentFile(req, res, tempAlert);
+                    }
+
+                    callback(null, tempAlert);
                 }
-
-                // Alert that requires STUDENT function
-                if (tempAlert.alertNameID == 4 ||
-                    tempAlert.alertNameID == 5 ||
-                    tempAlert.alertNameID == 16 ||
-                    tempAlert.alertNameID == 17 ||
-                    tempAlert.alertNameID == 19) {
-
-                    student.saveStudentFile(req, res, tempAlert);
-                }
-
-                callback(null, tempAlert);
             });
         },
         function (tempAlert, callback) {
@@ -138,7 +132,11 @@ module.exports.postReviewAlert = function (req, res, next) {
                     sendPush(message);
                 }
             });
-            return res.json({ success: true, message: 'Message sent', redirect: 'home' });
+            res.json({
+                success: true,
+                message: 'Alert Successfuly sent.',
+                redirect: 'home'
+            });
 
             /********************************
              *                              *
@@ -163,9 +161,9 @@ function sendPush(message) {
 }
 
 module.exports.photosStudents = function (req, res, next) {
-    res.sendFile('/Users/rna3/Google Drive/SMECS-API/public/photosStudents/' + req.params.file);
+    res.sendFile(path.join(__dirname, '../../public/photosStudents/' + req.params.file));
 }
 
 module.exports.floorPlans = function (req, res, next) {
-    res.sendFile('/Users/rna3/Google Drive/SMECS-API/public/floorPlans/' + req.params.file);
+    res.sendFile(path.join(__dirname, '../../public/floorPlans/' + req.params.file));
 }

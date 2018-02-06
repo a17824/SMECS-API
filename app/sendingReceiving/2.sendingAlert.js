@@ -25,6 +25,7 @@ module.exports.floorGet = function(req, res) {
         else {
             res.json({
                 success: false,
+                message: 'Something went wrong. Please try again.',
                 redirect: 'home'
             });
         }
@@ -42,7 +43,7 @@ module.exports.floorPost = function(req, res) {
             console.log('TTL EXPIRED');
             res.json({
                 success: false,
-                message: 'timed out',
+                message: 'Alert timed out, please try again.',
                 redirect: 'home'
             });
         }
@@ -138,6 +139,7 @@ module.exports.showFloorLocation = function(req, res) {
         else {
             res.json({
                 success: false,
+                message: 'Something went wrong. Please try again.',
                 redirect: 'home'
             });
         }
@@ -151,7 +153,7 @@ module.exports.postFloorLocation = function(req, res) {
             console.log('TTL EXPIRED');
             res.json({
                 success: false,
-                message: 'timed out',
+                message: 'Alert timed out. Please try again.',
                 redirect: 'home'
             });
         }
@@ -213,6 +215,7 @@ module.exports.showNotes = function(req, res) {
         else {
             res.json({
                 success: false,
+                message: 'Something went wrong. Please try again.',
                 redirect: 'home'
             });
         }
@@ -226,7 +229,7 @@ module.exports.postNotes = function(req, res) {
             console.log('TTL EXPIRED');
             res.json({
                 success: false,
-                message: 'timed out',
+                message: 'Alert timed out. Please try again.',
                 redirect: 'home'
             });
         }
@@ -314,6 +317,7 @@ module.exports.showStudent = function(req, res) {
         else {
             res.json({
                 success: false,
+                message: 'Something went wrong. Please try again.',
                 redirect: 'home'
             });
         }
@@ -336,7 +340,7 @@ module.exports.postStudent = function(req, res) {
             console.log('TTL EXPIRED');
             res.json({
                 success: false,
-                message: 'timed out',
+                message: 'Alert timed out. Please try again.',
                 redirect: 'home'
             });
         }
@@ -388,6 +392,7 @@ module.exports.showMultiSelection = function(req, res) {
         else {
             res.json({
                 success: false,
+                message: 'Something went wrong. Please try again.',
                 redirect: 'home'
             });
         }
@@ -401,7 +406,7 @@ module.exports.postMultiSelection = function(req, res) {
             console.log('TTL EXPIRED');
             res.json({
                 success: false,
-                message: 'timed out',
+                message: 'Alert timed out. Please try again.',
                 redirect: 'home'
             });
         }
@@ -492,7 +497,7 @@ module.exports.postRequestAssistance = function(req, res, next) {
             console.log('TTL EXPIRED');
             res.json({
                 success: false,
-                message: 'timed out',
+                message: 'Alert timed out. Please try again.',
                 redirect: 'home'
             });
         }
