@@ -19,6 +19,7 @@ var UsersSchema = new mongoose.Schema({
         studentLastName: String
     }],
     companyName: String,
+    contactName: String,
     softDeleted: { type: String, default: null},
     resetPasswordToken: String,
     resetPasswordExpires: Date,
@@ -28,8 +29,8 @@ var UsersSchema = new mongoose.Schema({
 var Users;
 module.exports.Users = mongoose.model("Users", UsersSchema);
 
-// DEFINE Users COLLECTION IN MONGOdb
-var UsersAddUpdateTempSchema = new mongoose.Schema({
+// DEFINE UsersAddTemp COLLECTION IN MONGOdb
+var UsersAddTempSchema = new mongoose.Schema({
     ttl: { type: Date, index: { expireAfterSeconds: 600 }, default: Date.now }, //TTL delete document after 600 seconds (10min)
     userRoleID: [Number],
     userRoleName: [String],
@@ -40,11 +41,20 @@ var UsersAddUpdateTempSchema = new mongoose.Schema({
     email: String,
     pin: String,
     photo: String,
-    companyName: String
+    parentOf: [{
+        studentID: Number,
+        studentFirstName: String,
+        studentLastName: String,
+    }],
+    parentOfOld: [],    //for back button on ejs to be able to get values
+    studentsWithParents: [],
+    companyName: String,
+    contactName: String
 
-}, {collection:"UsersAddUpdateTemp"}); //stops Mongoose of giving plurals to our collections names
-var UsersAddUpdateTemp;
-module.exports.UsersAddUpdateTemp = mongoose.model("UsersAddUpdateTemp", UsersAddUpdateTempSchema);
+}, {usePushEach: true,  //stops Mongoose error of "Unknown modifier: $pushAll"
+    collection:"UsersAddTemp"}); //stops Mongoose of giving plurals to our collections names
+var UsersAddTemp;
+module.exports.UsersAddTemp = mongoose.model("UsersAddTemp", UsersAddTempSchema);
 
 // DEFINE PRIVILEGE COLLECTION IN MONGOdb
 var PrivilegeSchema = new mongoose.Schema({
@@ -68,8 +78,14 @@ var StudentsSchema = new mongoose.Schema({
     studentID: { type: Number, unique: true },
     firstName: String,
     lastName: String,
-    photo: String
-}, {collection:"Students"}); //stops Mongoose of giving plurals to our collections names
+    photo: String,
+    parentOf: [{
+        parentID: Number,
+        parentFirstName: String,
+        parentLastName: String,
+    }]
+}, {usePushEach: true,  //stops Mongoose error of "Unknown modifier: $pushAll"
+    collection:"Students"}); //stops Mongoose of giving plurals to our collections names
 var Students;
 module.exports.Students = mongoose.model("Students", StudentsSchema);
 
