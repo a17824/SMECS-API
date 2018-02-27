@@ -34,7 +34,7 @@ app.use('/', routes);
 // END OF configuration
 
 // server ================
-var port = process.env.PORT || 1000;
+var port = process.env.PORT || 3001;
 app.listen(port);
 // END OF server==========
 

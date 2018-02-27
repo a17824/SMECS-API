@@ -193,7 +193,6 @@ module.exports.postFloorLocation = function(req, res) {
 
 //          NOTES          \\
 module.exports.showNotes = function(req, res) {
-    console.log('NOTES GET ----------------------------------------------------');
     async.parallel([
         function(callback){
             models.AlertSentTemp.findById(req.params.id).exec(callback);
@@ -222,7 +221,6 @@ module.exports.showNotes = function(req, res) {
     });
 };
 module.exports.postNotes = function(req, res) {
-    console.log('NOTES POST ---------------------------------------------------------');
     var alertToUpdate1 = req.body._id;
     models.AlertSentTemp.findById({'_id': alertToUpdate1}, function (err, alert) {
         if (!alert) {

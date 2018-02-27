@@ -29,10 +29,6 @@ router.post('/sending/floor', auth.auth, sendingAlert.floorPost, function(req, r
 router.get('/sending/floorLocation/:id', auth.auth, sendingAlert.showFloorLocation, function(req, res) {});
 router.post('/sending/floorLocation', auth.auth, sendingAlert.postFloorLocation, function(req, res) {});
 
-/* Send Alert - getFloorPlan. -------------------------------*/
-router.get('/public/floorPlans/', reviewAlert.reviewAlert, function(req, res) {});
-/* THIS NEEDS TO BE FINISHED!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
 /* Send Alert - Notes. -------------------------------*/
 router.get('/sending/notes/:id', auth.auth, sendingAlert.showNotes, function(req, res) {});
 router.post('/sending/notes', auth.auth, sendingAlert.postNotes, function(req, res) {});
