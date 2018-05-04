@@ -5,7 +5,6 @@ var async = require("async");
 
 //          FLOOR           \\
 module.exports.floorGet = function(req, res) {
-    console.log('FLOOR GET ----------------------------------------------------');
     async.parallel([
         function(callback){
             models.AlertSentTemp.findById(req.params.id).exec(callback);
@@ -18,7 +17,6 @@ module.exports.floorGet = function(req, res) {
             res.json({
                 success: true,
                 title: results[0].alertName,
-                testModeON: results[0].testModeON,
                 floor: results[1]
             });
         }
@@ -32,7 +30,6 @@ module.exports.floorGet = function(req, res) {
     });
 };
 module.exports.floorPost = function(req, res) {
-    console.log('FLOOR POST ---------------------------------------------------------');
     var alertToUpdate1 = req.body._id;
     var floorID = req.body.floorID;
     var floorName = req.body.floorName;
@@ -120,7 +117,6 @@ module.exports.floorPost = function(req, res) {
 
 //          FLOOR LOCATION          \\
 module.exports.showFloorLocation = function(req, res) {
-    console.log('FLOOR GET ----------------------------------------------------');
     async.parallel([
         function(callback){
             models.AlertSentTemp.findById(req.params.id).exec(callback);
@@ -129,7 +125,6 @@ module.exports.showFloorLocation = function(req, res) {
         if (results[0] != null) {
             res.json({
                 success: true,
-                testModeON: results[0].testModeON,
                 title: results[0].alertName,
                 floorID: results[0].floorID,
                 floorName: results[0].floorName,
@@ -235,6 +230,7 @@ module.exports.postNotes = function(req, res) {
             alert.note = req.body.note;
 
             var redirect;
+            var allFloorsButtonHidden;
 
             if (alert.alertNameID == 2 ||
                 alert.alertNameID == 3 ||
@@ -272,12 +268,13 @@ module.exports.postNotes = function(req, res) {
                 alert.studentWithGunSeated = req.body.seat;
                 alert.studentWithGunBehaviour = req.body.studentBehaviour;
                 alert.save();
-                redirect = 'floor';
+                redirect = 'summary';
             }
             if (alert.alertNameID == 7 ) {
 
                 alert.evacuateWhereTo = req.body.whereToEvacuate;
                 alert.save();
+                allFloorsButtonHidden = false;
                 redirect = 'summary';
             }
             if (alert.alertNameID == 26 ) {
@@ -288,7 +285,8 @@ module.exports.postNotes = function(req, res) {
             }
             res.json({
                 success: true,
-                redirect: redirect
+                redirect: redirect,
+                allFloorsButtonHidden: allFloorsButtonHidden
             });
         }
     });
@@ -355,7 +353,7 @@ module.exports.postStudent = function(req, res) {
                 alert.studentName = studentName;
                 alert.studentPhoto = studentPhoto;
                 alert.save();
-                redirect = 'notes';
+                redirect = 'floor';
             }
             res.json({
                 success: true,
@@ -381,7 +379,6 @@ module.exports.showMultiSelection = function(req, res) {
         if (results[0] != null) {
             res.json({
                 success: true,
-                testModeON: results[0].testModeON,
                 title: results[0].alertName,
                 utilities: results[1],
                 medical: results[2]

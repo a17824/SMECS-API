@@ -7,8 +7,8 @@ var forgot = require('./../app/authenticate/forgot');
 var chooseAlert = require('./../app/sendingReceiving/1.chooseAlert.js');
 var sendingAlert = require('./../app/sendingReceiving/2.sendingAlert.js');
 var reviewAlert = require('./../app/sendingReceiving/3.reviewAlert.js');
+var reports = require('./../app/reports/reports.js');
 
-var users = require('./../app/authenticate/toDelete'); //para apagar
 var auth = require('./../app/authenticate/auth');
 
 /* AUTHENTICATE ---------------------- */
@@ -47,12 +47,29 @@ router.post('/sending/requestAssistance', auth.auth, sendingAlert.postRequestAss
 
 /* Send Alert - Summary. -------------------------------*/
 router.get('/sending/summary/:id', auth.auth, reviewAlert.reviewAlert, function(req, res) {});
-router.post('/sending/summary', auth.auth, reviewAlert.postReviewAlert, function(req, res) {});
+router.post('/sending/summary', auth.auth, auth.pin, reviewAlert.postReviewAlert, function(req, res) {});
+
+/* Update pushToken ------------------------------------*/
+router.post('/updatePushToken', auth.auth, auth.pin, function(req, res) {});
+
+/* Get all alerts ------------------------------------*/
+router.get('/reports/reportsGet', auth.auth, reports.reportsGet, function(req, res) {});
+
+/* Get details on single alert ------------------------------------*/
+router.get('/reports/alertInfo/:id', auth.auth, reports.alertInfoGet, function(req, res) {});
+
+/* Get number of open alerts ------------------------------------*/
+router.get('/reports/openAlerts', auth.auth, reports.openAlertsGet, function(req, res) {});
+
+/* Get procedure ------------------------------------*/
+router.get('/reports/procedureGet/:id', auth.auth, reports.procedureGet, function(req, res) {});
+router.get('/reports/proceduresGet', auth.auth, reports.proceduresGet, function(req, res) {});
+
+/* Post received alert ----------------------------------*/
+router.post('/alertReceipt', auth.auth, reports.alertReceiptPost, function(req, res) {});
+router.post('/alertViewed', auth.auth, reports.alertViewedPost, function(req, res) {});
 
 router.get('/public/photosStudents/:file', reviewAlert.photosStudents, function(req, res) {});
 router.get('/public/floorPlans/:file', reviewAlert.floorPlans, function(req, res) {});
-
-/* TO  DELETE ---------------------- */
-router.get('/users', auth.auth, users.usersGet, function(req, res) {});
 
 module.exports = router;
