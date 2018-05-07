@@ -2,25 +2,24 @@
 var async = require("async");
 var path = require('path');
 var jwt = require('jsonwebtoken'); // used to create, sign, and verify tokens
+var FCM = require('fcm-node');
 
 var models = require('./../models/models');
 var create = require('./saveAlertFunc/3c.createAlertSentInfo.js');
 var floor = require('./saveAlertFunc/3a.savefloorFile.js');
 var student = require('./saveAlertFunc/3b.student.js');
 var config = require('./../../config');
-var FCM = require('fcm-node');
-
 
 module.exports.reviewAlert = function (req, res) {
-    console.log(req.params._id);
-    models.AlertSentTemp.findById({ '_id': req.params.id }, function (err, results) {
+    models.AlertSentTemp.findById({
+        '_id': req.params.id
+    }, function (err, results) {
         if (results != null) {
             res.json({
                 success: true,
                 results: results // check if alert is softDeleted for Utilities Failure
             });
-        }
-        else {
+        } else {
             res.json({
                 success: false,
                 message: 'Alert timed out, please try again.',
@@ -34,7 +33,9 @@ module.exports.postReviewAlert = function (req, res, next) {
     var alertToUpdate1 = req.body._id;
     async.waterfall([
         function (callback) {
-            models.AlertSentTemp.findById({ '_id': alertToUpdate1 }, function (err, tempAlert) {
+            models.AlertSentTemp.findById({
+                '_id': alertToUpdate1
+            }, function (err, tempAlert) {
                 //console.log(tempAlert);
                 if (!tempAlert) {
                     console.log('TTL EXPIRED');
@@ -43,8 +44,7 @@ module.exports.postReviewAlert = function (req, res, next) {
                         message: 'Alert timed out, please try again.',
                         redirect: 'home'
                     });
-                }
-                else {
+                } else {
                     // Alert that requires FLOOR function
                     if (tempAlert.alertNameID == 2 ||
                         tempAlert.alertNameID == 4 ||
@@ -99,7 +99,10 @@ module.exports.postReviewAlert = function (req, res, next) {
                 // verifies secret and checks exp
                 jwt.verify(token, config.secret, function (err, decoded) {
                     if (err) {
-                        return res.json({ success: false, message: 'Failed to authenticate token.' });
+                        return res.json({
+                            success: false,
+                            message: 'Failed to authenticate token.'
+                        });
                     } else {
                         // if everything is good, save to request for use in other routes
 
@@ -116,20 +119,22 @@ module.exports.postReviewAlert = function (req, res, next) {
     ], function (err, tempAlert) {
         if (err) {
             console.log(err);
-            res.send({ message: 'something went wrong' });
+            res.send({
+                message: 'something went wrong'
+            });
         } else {
-
-
             tempAlert.sentUsersScope.forEach(function (users) {
                 if (users.userPushToken) {
                     var message = {
-                        to: users.userPushToken, // required fill with device token or topics
-                        notification: {
-                            title: 'Title of your push notification',
-                            body: 'Body of your push notification'
+                        to: users.userPushToken, // required fill with device token
+                        data: {  //you can send only notification or only data(or include both)
+                            alertID: tempAlert._id,
+                            action: 'newAlert',
+                            alertName: tempAlert.alertName
                         }
                     };
-                    sendPush(message);
+                    var userName = users.userFirstName + ' ' + users.userLastName;
+                    sendPush(message, userName);
                 }
             });
             res.json({
@@ -137,25 +142,19 @@ module.exports.postReviewAlert = function (req, res, next) {
                 message: 'Alert Successfuly sent.',
                 redirect: 'home'
             });
-
-            /********************************
-             *                              *
-             *  CALL HERE NOTIFICATION API  *
-             *                              *
-             * *****************************/
         }
     });
-};
+}
 
-function sendPush(message) {
+function sendPush(message, userName) {
     var serverKey = 'AIzaSyAQHCWvoiCkDk_8_Aur1rpUInk-Sx_uilk';
     var fcm = new FCM(serverKey);
 
     fcm.send(message, function (err, response) {
         if (err) {
-            console.log("Something has gone wrong!", err);
+            console.log("Couldn't send message to " + userName);
         } else {
-            console.log("Successfully sent with response: ", response);
+            console.log("Successfully sent to " + userName);
         }
     });
 }

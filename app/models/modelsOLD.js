@@ -13,9 +13,6 @@ var UsersSchema = new mongoose.Schema({
     email: { type: String, unique: true },
     pin: String,
     photo: String,
-    internal: { type: Boolean, default: false},
-    parent: { type: Boolean, default: false},
-    external: { type: Boolean, default: false},
     parentOf: [{
         studentID: Number,
         studentFirstName: String,
@@ -27,18 +24,8 @@ var UsersSchema = new mongoose.Schema({
     resetPasswordToken: String,
     resetPasswordExpires: Date,
     receptionPA: { type: Boolean, default: false},
-    pushToken: String,
-    redirect: { type: String, default: 'home'},
-    appSettings:{
-        groupAlertsButtons: { type: Boolean, default: false},
-        groupAlertsLogo: String,
-        theme: String,
-        soundPanic: String,
-        soundSend: String,
-        soundReceive: String
-    }
-}, {usePushEach: true,  //stops Mongoose error of "Unknown modifier: $pushAll"
-    collection:"Users"}); //stops Mongoose of giving plurals to our collections names
+    pushToken: String
+}, {collection:"Users"}); //stops Mongoose of giving plurals to our collections names
 var Users;
 module.exports.Users = mongoose.model("Users", UsersSchema);
 
@@ -69,17 +56,6 @@ var UsersAddTempSchema = new mongoose.Schema({
 var UsersAddTemp;
 module.exports.UsersAddTemp = mongoose.model("UsersAddTemp", UsersAddTempSchema);
 
-
-// DEFINE UsersAddTemp COLLECTION IN MONGOdb
-var ParentSelfRegistrationSchema = new mongoose.Schema({
-    email: String,
-    pin: String
-}, {usePushEach: true,  //stops Mongoose error of "Unknown modifier: $pushAll"
-    collection:"ParentSelfRegistration"}); //stops Mongoose of giving plurals to our collections names
-var ParentSelfRegistration;
-module.exports.ParentSelfRegistration = mongoose.model("ParentSelfRegistration", ParentSelfRegistrationSchema);
-
-
 // DEFINE PRIVILEGE COLLECTION IN MONGOdb
 var PrivilegeSchema = new mongoose.Schema({
     privilegeID: { type: Number, unique: true },
@@ -103,8 +79,8 @@ var StudentsSchema = new mongoose.Schema({
     firstName: String,
     lastName: String,
     photo: String,
-    busRide: { type: Boolean, default: false},
     parentOf: [{
+        parentID: Number,
         parentFirstName: String,
         parentLastName: String,
     }]
@@ -150,9 +126,7 @@ module.exports.Permissions = mongoose.model("Permissions", PermissionsSchema);
 var AlertsGroupSchema = new mongoose.Schema({
     sortID: { type: Number, unique: true },
     alertTypeID: { type: Number, unique: true },
-    alertTypeName: { type: String, unique: true }, // Users, Alerts, Students
-    colorName: String,
-    colorValue: String
+    alertTypeName: { type: String, unique: true } // Users, Alerts, Students
 }, {collection:"AlertsGroup"}); //stops Mongoose of giving plurals to our collections names
 var AlertsGroup;
 module.exports.AlertsGroup = mongoose.model("AlertsGroup", AlertsGroupSchema);
@@ -161,10 +135,7 @@ module.exports.AlertsGroup = mongoose.model("AlertsGroup", AlertsGroupSchema);
 var AlertsSchema = new mongoose.Schema({
     sortID: { type: Number, unique: true },
     alertTypeID: Number,
-    alertTypeSortID: Number,
     alertTypeName: String,
-    alertTypeColorName: String,
-    alertTypeColorValue: String,
     alertID: { type: Number, unique: true },
     alertName: { type: String, unique: true }, // Lockdown, Evacuate...
     alertSlugName: String,
@@ -187,28 +158,10 @@ var AlertSentInfoSchema = new mongoose.Schema({
     sentTime: String,
     sentRoleIDScope: [Number],
     sentRoleNameScope: [String],      // Teachers, Staff, Parents...
-    sentTo: [{                      //30
-        firstName: String,
-        lastName: String,
-        pushToken: String,
-        received: {
-            receivedBoolean: {type: Boolean, default: false},         //22
-            receivedDate: String,
-            receivedTime: String
-        },
-        viewed: {
-            viewedBoolean: {type: Boolean, default: false},         //22
-            viewedDate: String,
-            viewedTime: String
-        },
-    }],
-
-    status: {
-        statusString: { type: String, default: 'open' },         // Open, Closed
-        statusClosedDate: String,
-        statusClosedTime: String
-    },
-
+    sentUsersScope: [String],         // Mary Ann, David Frank,.... Total = 30 (count)
+    received: [String],       // Mary Ann, David Frank,... Total = 22 (count)
+    viewed: [String],         // Mary Ann,... Total = 17 (count)
+    status: { type: String, default: 'open' },         // Open, Closed
     testModeON: Boolean,
     request911Call: { type: Boolean, default: false },
     whoCanCall911: [String],
@@ -234,40 +187,12 @@ var AlertSentInfoSchema = new mongoose.Schema({
     evacuateWhereTo: String,
     busAccidentLocation1: String,           //Accident Location
     busAccidentLocation2: String,           //Location of Principal CellPhone
-    busMorningAfternoon: String,            //bus time: morning or afternoon
-    busDelayedAhead: String,                //bus is delayed or ahead
-    busTimeChanged: String,                 //0:45, 1:30...
-    busTimeChangedEmail: Boolean,            //on or off (to send email to parents)
     multiSelectionNames: [String],
     multiSelectionIDs: [String],
     askedForAssistance: Boolean,
-    medicalInjuredParties: Number,
-    requestAssistance: [{
-        utilityID: Number,
-        utilityName: String,
-        contactName: String,
-        phone: String,
-        email: String,
-        smecsApp: { type: Boolean, default: false },
-        reqSmecsApp: {
-            sentReqSmecsApp: Boolean,
-            stat: String,
-            sentTime: String
-        },
-        reqEmail: {
-            sentReqEmail: Boolean,
-            stat: String,
-            sentTime: String
-        },
-        reqCall: {
-            sentReqCall: Boolean,
-            stat: String,
-            sentTime: String
-        }
-    }]
+    medicalInjuredParties: Number
 
-}, {usePushEach: true,  //stops Mongoose error of "Unknown modifier: $pushAll"
-    collection:"AlertSentInfo"}); //stops Mongoose of giving plurals to our collections names
+}, {collection:"AlertSentInfo"}); //stops Mongoose of giving plurals to our collections names
 var AlertSentInfo;
 module.exports.AlertSentInfo = mongoose.model("AlertSentInfo", AlertSentInfoSchema);
 
@@ -280,7 +205,12 @@ var AlertSentTempSchema = new mongoose.Schema({
     //alertSlugName: String,
     sentBy: String,
     sentTime: String,
-    notePlaceholder: String,
+    placeholderNote: String,
+    placeholderMissingChildLastPlaceSeen: String,
+    placeholderMissingChildClothesWearing: String,
+    placeholderStudentWithGunSeated: String,
+    placeholderStudentWithGunBehaviour: String,
+    placeholderEvacuateWhereTo: String,
     testModeON: Boolean,
     request911Call: { type: Boolean, default: false },
     whoCanCall911: [String],
@@ -294,7 +224,6 @@ var AlertSentTempSchema = new mongoose.Schema({
         userPhoto: String
     }],
     ttl: { type: Date, index: { expireAfterSeconds: 600 }, default: Date.now }, //TTL delete document after 600 seconds (10min)
-    placeholderNote: String,
     note: String,
     floorName: String,                 //read from FloorLevels database (radio buttons)
     floorID: String,                    //for Hazardous Alert "all floors exit to evacuate" option
@@ -312,39 +241,11 @@ var AlertSentTempSchema = new mongoose.Schema({
     evacuateWhereTo: String,
     busAccidentLocation1: String,           //Accident Location
     busAccidentLocation2: String,           //Location of Principal CellPhone
-    busMorningAfternoon: String,            //bus time: morning or afternoon
-    busDelayedAhead: String,                //bus is delayed or ahead
-    busTimeChanged: String,                 //0:45, 1:30...
-    busTimeChangedEmail: Boolean,            //on or off (to send email to parents)
     multiSelectionNames: [String],          // Utilities in Failure or Medical Emergencies
     multiSelectionIDs: [String],
-    medicalInjuredParties: Number,          //comboBox, listBox
-    requestAssistance: [{
-        utilityID: Number,
-        utilityName: String,
-        contactName: String,
-        phone: String,
-        email: String,
-        smecsApp: { type: Boolean, default: false },
-        reqSmecsApp: {
-            sentReqSmecsApp: Boolean,
-            stat: String,
-            sentTime: String
-        },
-        reqEmail: {
-            sentReqEmail: Boolean,
-            stat: String,
-            sentTime: String
-        },
-        reqCall: {
-            sentReqCall: Boolean,
-            stat: String,
-            sentTime: String
-        }
-    }]
+    medicalInjuredParties: Number          //comboBox, listBox
 
-}, {usePushEach: true,  //stops Mongoose error of "Unknown modifier: $pushAll"
-    collection:"AlertSentTemp"}); //stops Mongoose of giving plurals to our collections names
+}, {collection:"AlertSentTemp"}); //stops Mongoose of giving plurals to our collections names
 var AlertSentTemp;
 module.exports.AlertSentTemp = mongoose.model("AlertSentTemp", AlertSentTempSchema);
 // Fix for Mongoose not creating the TTL indexes (see https://github.com/LearnBoost/mongoose/issues/2459#issuecomment-62802096 )
@@ -352,6 +253,26 @@ mongoose.model('AlertSentTemp').ensureIndexes(function(err) {
     console.log('ensure index', err)
 });
 
+
+// DEFINE RequestAssistance COLLECTION IN MONGOdb
+var RequestAssistanceSchema = new mongoose.Schema({
+    idAlert: String,
+    status: String,
+    sentTime: String,
+    alertNameID: String,
+    alertName: String,
+    utilityID: Number,
+    utilityName: String,
+    requestAssistanceSmecsApp: Boolean,
+    requestAssistanceEmail: Boolean,
+    requestAssistanceCall: Boolean,
+    smecsContacts: [String],
+    emailContact: String,
+    callContact: String
+
+}, {collection:"RequestAssistance"}); //stops Mongoose of giving plurals to our collections names
+var RequestAssistance;
+module.exports.RequestAssistance = mongoose.model("RequestAssistance", RequestAssistanceSchema);
 
 
 // DEFINE AlertReportsSent COLLECTION IN MONGOdb
@@ -405,11 +326,8 @@ var AclAlertsRealSchema = new mongoose.Schema({
     roleGroupID: Number,
     roleGroupName: String, // Principal, Office Staff, Teacher
     alertTypeID: Number,
-    alertTypeSortID: Number,
     alertTypeName: String, // Red, Green, Blue...
-    alertTypeValue: String,
     alertID: Number,
-    alertSortID: Number,
     alertName: String, // Permission to Send/Receive alerts
     alertSoftDeleted: { type: Boolean, default: false},
     checkBoxType: String,
@@ -426,11 +344,8 @@ var AclAlertsTestSchema = new mongoose.Schema({
     roleGroupID: Number,
     roleGroupName: String, // Principal, Office Staff, Teacher
     alertTypeID: Number,
-    alertTypeSortID: Number,
     alertTypeName: String, // Red, Green, Blue...
-    alertTypeValue: String,
     alertID: Number,
-    alertSortID: Number,
     alertName: String, // Permission to Send/Receive alerts
     alertSoftDeleted: { type: Boolean, default: false},
     checkBoxType: String,
